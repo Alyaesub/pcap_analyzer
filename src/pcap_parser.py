@@ -73,3 +73,15 @@ def read_exact(f, size):
     exit(1)
   
   return data
+
+############### function qui lie et verifie si le header packet est valide et si il en reste pour finir de bouclé sur les packet du pcap ###########
+def read_packet_header_or_none(f):
+  data_packet_header = f.read(16) # lie les 16 premier byte du packet header
+  
+  if len(data_packet_header) == 0:
+    return None
+  elif len(data_packet_header) != 16:
+    print("Erreur: Fichier tronqué ou invalide")
+    exit(1)
+  else:
+    return data_packet_header

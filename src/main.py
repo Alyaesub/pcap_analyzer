@@ -2,7 +2,8 @@ import os
 from pcap_parser import (
   parse_global_header,
   parse_packet_header,
-  read_exact
+  read_exact,
+  read_packet_header_or_none
 )
 
 #pathe de la ressource a analiser
@@ -14,26 +15,49 @@ RESSOURCE_PATH = "captures/http_local_capture.pcap"
 if not os.path.isfile(RESSOURCE_PATH):
   print("fichier introuvable")
   exit(1)
+
 #ouvre et lie le fichier en bytes
 with open(RESSOURCE_PATH, 'rb') as f:
   # Global header
   global_header_byte = read_exact(f, 24) # lie les 24 byte du global header
   # Appele de la function qui parse le global header
   global_header = parse_global_header(global_header_byte)
+  # print les byte du global header
+  print("====Global-Header-Bytes====")
+  print(global_header_byte)
   
-  # Packet header
-  packet_header_byte = read_exact(f, 16) # lie les 16 byte du packet header
-  # Appele de la function qui parse le packet header
-  packet_header = parse_packet_header(packet_header_byte, global_header["endianness"])
+  # variable qui stocke les packet pour boucler sur tous les packet
+  packet_index = 1
   
-  # Packet data : contenu brut du paquet
-  packet_data_byte = read_exact(f, packet_header["incl_len"])
+  # boucle pour parcourire tous les packet du pcap
+  while True:
+    # Packet header
+    packet_header_byte = read_packet_header_or_none(f) # lie les 16 byte du packet header et verifie si il est valide
 
-# print les byte du global header
-print("====Global-Header-Bytes====")
-print(global_header_byte)
-print("====Packet-Header-Bytes====")
-print(packet_header_byte)
+    if packet_header_byte is None: # si fin des packet dans pcap on break
+      break
+    
+    # Appele de la function qui parse le packet header
+    packet_header = parse_packet_header(packet_header_byte, global_header["endianness"])
+    # Packet data : contenu brut du paquet
+    packet_data_byte = read_exact(f, packet_header["incl_len"])
+    
+    ##################### Parsing des Packet #####################
+    # print les infos du packet header
+    print(f"======Parsing du Packet n° {packet_index}======")
+    print("Timestamp seconds: ", packet_header["ts_sec"])
+    print("Timestamp microseconds: ", packet_header["ts_usec"])
+    print("Included length: ", packet_header["incl_len"])
+    print("Original length: ", packet_header["orig_len"])
+    # print les data du packet
+    print("=======Packet Data==========")
+    print("Packet data length: ", len(packet_data_byte))
+    print("Packet data preview (32 bytes): ", packet_data_byte[:32].hex())
+    # incrémente l'index
+    packet_index += 1
+print("=======Nombre totale de packets=========")
+print("Total packets:", packet_index - 1)
+
 
 ######################## parsing du global header #########################
 # print les infos du global header
@@ -45,16 +69,3 @@ print("ThisZone:", global_header["thiszone"])
 print("Sigfigs:", global_header["sigfigs"])
 print("Snaplen:", global_header["snaplen"])
 print("Network:", global_header["network"])
-
-
-##################### Parsing du Packet header #####################
-# print les infos du packet header
-print("======Packet Header Parsing======")
-print("Timestamp seconds: ", packet_header["ts_sec"])
-print("Timestamp microseconds: ", packet_header["ts_usec"])
-print("Included length: ", packet_header["incl_len"])
-print("Original length: ", packet_header["orig_len"])
-# print les data du packet
-print("=======Packet Data==========")
-print("length byte data: ", len(packet_data_byte))
-print("32 premier byte: ", packet_data_byte[:32].hex())
