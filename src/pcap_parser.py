@@ -85,3 +85,12 @@ def read_packet_header_or_none(f):
     exit(1)
   else:
     return data_packet_header
+
+############# function qui verifie et traduit le type de network ###########
+def get_linktype_name(network):
+  if network == 0:
+    return "Loopback / non-Ethernet"
+  elif network == 1:
+    return "Ethernet II"
+  else:
+    return "Linktype non supporté"
