@@ -3,9 +3,10 @@ from utils import (
 )
 
 # function qui parse le packet_data_byte pour recupéle le byte ethernet
-def parse_ethernet(packet_data_byte ):
+def parse_ethernet(packet_data_byte):
   if len(packet_data_byte ) < 14:
-    return "Erreur trame Ethernet non valide" + exit(1)
+    print("Erreur trame Ethernet non valide")
+    exit(1)
   
   dst_mac_byte = packet_data_byte[0:6] # adress mac de destination
   src_mac_byte = packet_data_byte[6:12] # mac de la source

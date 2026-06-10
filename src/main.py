@@ -10,6 +10,10 @@ from ethernet import (
   parse_ethernet,
   get_ethertype_name,
 )
+from ipv4 import (
+  parse_ipv4,
+  get_ipv4_protocol_name
+)
 
 #pathe de la ressource a analiser
 RESSOURCE_PATH = "captures/ethernet_capture_small.pcap"
@@ -50,43 +54,60 @@ with open(RESSOURCE_PATH, 'rb') as f:
     # Packet data : contenu brut du paquet
     packet_data_byte = read_exact(f, packet_header["incl_len"])
     
-    # Gestion Ethernet
+    # Gestion Ethernet, IPv4, 
     ethernet = None # de base lecture sans ethernet si ethernet existe alors :
     ethertype_name = None #pareil pour ethertype
+    ipv4 = None
     
     if global_header["network"]  == 1: # verifie le network
       # appele la function qui parse le packet Ethernet
       ethernet = parse_ethernet(packet_data_byte)
-      ethertype_name = get_ethertype_name(ethernet["ethertype"])
-    
+      ethertype_name = get_ethertype_name(ethernet["ethertype"]) # function qui donne le nom du type prorpe
+      if ethernet["ethertype"] == 0x0800: # if ethertype == ipv4
+        ipv4 = parse_ipv4(ethernet["payload"])
+        protocol_name = get_ipv4_protocol_name(ipv4["protocol"])
+
     ##################### Parsing des Packet #####################
     # print les infos du packet header
-    print(f"======Parsing Packet n°{packet_index}======")
+    print(f"======Parsing Packet n°{packet_index} :======")
     print("Timestamp seconds: ", packet_header["ts_sec"])
     print("Timestamp microseconds: ", packet_header["ts_usec"])
     print("Included length: ", packet_header["incl_len"])
     print("Original length: ", packet_header["orig_len"])
     # print les data du packet
-    print(f"======Packet Data packet n°{packet_index}======")
+    print(f"======Packet Data packet n°{packet_index} :======")
     print("Packet data length: ", len(packet_data_byte))
     print("Packet data preview (32 bytes): ", packet_data_byte[:32].hex())
     #print les data ethernet
     if ethernet is not None:
-      print(f"======Parsing Ethernet packet n°{packet_index}======")
+      print(f"======Parsing Ethernet packet n°{packet_index} :======")
       print("Adresse MAC de destination:", ethernet["dst_mac"])
       print("Adresse MAC d'éxpédition:", ethernet["src_mac"])
       print("Ethernet Type:", ethertype_name)
+      #print le header IPv4
+    if ipv4 is not None:
+      print(f"======Parsing IPv4 packet n°{packet_index} :======")
+      print("Version:", ipv4["version"])
+      print("IHL:", ipv4["ihl"])
+      print("Header length:", ipv4["header_length"])
+      print("Total length:", ipv4["total_length"])
+      print("TTL:", ipv4["ttl"])
+      print("Protocol:", protocol_name)
+      print("Source IP:", ipv4["src_ip"])
+      print("Destination IP:", ipv4["dst_ip"])
+      print("Flags:", ipv4["flags"])
+      print("Fragment offset:", ipv4["fragment_offset"])
       print()
     
     # incrémente l'index
     packet_index += 1
+
 
 ######## fin du with et lecture fermet ################
 ####### print du nombre de packet ####
 print("======Nombre totale de packets======")
 print("Total packets:", packet_index - 1)
 print()
-
 
 ######################## parsing du global header #########################
 # print les infos du global header
