@@ -10,12 +10,26 @@ def parse_tcp(tcp_bytes):
   acknowledgment_number_byte = tcp_bytes[8:12]
   data_offset_byte = tcp_bytes[12] >> 4 # taille du header en blocs de 4 bytes
   header_length_byte = data_offset_byte * 4 #taille réelle du header TCP en bytes
-
+  if header_length_byte < 20:
+    print("Erreur, header TCP invalide")
+    exit(1)
+  if len(tcp_bytes) < header_length_byte:
+    print("Erreur, packet TCP tronqué")
+    exit(1)
+  flags_byte = tcp_bytes[13]
+  checksum_byte = tcp_bytes[16:18]
+  urgent_pointer_byte = tcp_bytes[18:20]
+  options = tcp_bytes[20:header_length_byte]
+  payload = tcp_bytes[header_length_byte:]
+  
+  
   src_port_number = int.from_bytes(src_port_byte, byteorder="big")
   dst_port_number = int.from_bytes(dst_port_byte, byteorder="big")
   sequence_number_number = int.from_bytes(sequence_number_byte, byteorder="big") #position dans le flux envoyé
   acknowledgment_number_number= int.from_bytes(acknowledgment_number_byte, byteorder="big") #prochain byte attendu par le récepteur
   window = int.from_bytes(tcp_bytes[14:16], byteorder="big") # quantité de données que le récepteur accepte encore
+  checksum_number = int.from_bytes(checksum_byte, byteorder="big") #sert à détecter une corruption du segment TCP
+  urgent_pointer_number = int.from_bytes(urgent_pointer_byte, byteorder="big") #ert seulement avec le flag URG,
   
   return {
     "src_port": src_port_number,
@@ -23,5 +37,29 @@ def parse_tcp(tcp_bytes):
     "sequence_number": sequence_number_number,
     "acknowledgment_number": acknowledgment_number_number,
     "header_length": header_length_byte,
-    "window": window
+    "window": window,
+    "flags": flags_byte,
+    "checksum": checksum_number,
+    "urgent_pointer": urgent_pointer_number,
+    "options": options,
+    "payload": payload
   }
+
+######## function qui traduit les byte et hex des flags ########@
+def get_tcp_flags_names(flags_byte):
+  flags = []
+
+  if flags_byte & 0x01:
+    flags.append("FIN")
+  if flags_byte & 0x02:
+    flags.append("SYN")
+  if flags_byte & 0x04:
+    flags.append("RST")
+  if flags_byte & 0x08:
+    flags.append("PSH")
+  if flags_byte & 0x10:
+    flags.append("ACK")
+  if flags_byte & 0x20:
+    flags.append("URG")
+
+  return flags

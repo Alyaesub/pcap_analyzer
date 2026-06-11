@@ -18,6 +18,7 @@ from ipv4 import (
 )
 from tcp import (
   parse_tcp,
+  get_tcp_flags_names,
 )
 
 #pathe de la ressource a analiser
@@ -64,6 +65,7 @@ with open(RESSOURCE_PATH, 'rb') as f:
     ethertype_name = None #pareil pour ethertype
     ipv4 = None
     tcp = None
+    flags_names = None
     
     if global_header["network"]  == 1: # verifie le network
       # appele la function qui parse le packet Ethernet
@@ -74,6 +76,7 @@ with open(RESSOURCE_PATH, 'rb') as f:
         protocol_name = get_ipv4_protocol_name(ipv4["protocol"])
         if ipv4["protocol"] == 6:
           tcp = parse_tcp(ipv4["payload"])
+          flags_names = get_tcp_flags_names(tcp["flags"])
 
     ##################### Parsing des Packet #####################
     # print les infos du packet header
@@ -113,8 +116,13 @@ with open(RESSOURCE_PATH, 'rb') as f:
       print("Acknowledgment number:", tcp["acknowledgment_number"])
       print("Header length:", tcp["header_length"])
       print("Window:", tcp["window"])
+      print("Flags:", flags_names)
+      print("Checksum:", tcp["checksum"])
+      print("Urgent pointer:", tcp["urgent_pointer"])
+      print("Options length:", len(tcp["options"]))
+      print("Payload length:", len(tcp["payload"]))
+      print("Payload preview:", tcp["payload"][:32].hex())
       print()
-    
     # incrémente l'index
     packet_index += 1
 
