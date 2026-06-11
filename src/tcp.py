@@ -3,7 +3,7 @@ def parse_tcp(tcp_bytes):
   if len(tcp_bytes) < 20:
     print("Erreur, packet TCP non valide")
     exit(1)
-
+  
   src_port_byte = tcp_bytes[0:2]
   dst_port_byte = tcp_bytes[2:4]
   sequence_number_byte = tcp_bytes[4:8]

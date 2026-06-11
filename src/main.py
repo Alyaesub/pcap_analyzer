@@ -20,6 +20,9 @@ from tcp import (
   parse_tcp,
   get_tcp_flags_names,
 )
+from udp import (
+  parse_udp,
+)
 
 #pathe de la ressource a analiser
 RESSOURCE_PATH = "captures/ethernet_capture_small.pcap"
@@ -66,6 +69,7 @@ with open(RESSOURCE_PATH, 'rb') as f:
     ipv4 = None
     tcp = None
     flags_names = None
+    udp = None
     
     if global_header["network"]  == 1: # verifie le network
       # appele la function qui parse le packet Ethernet
@@ -77,6 +81,8 @@ with open(RESSOURCE_PATH, 'rb') as f:
         if ipv4["protocol"] == 6:
           tcp = parse_tcp(ipv4["payload"])
           flags_names = get_tcp_flags_names(tcp["flags"])
+        if ipv4["protocol"] == 17:
+          udp = parse_udp(ipv4["payload"])
 
     ##################### Parsing des Packet #####################
     # print les infos du packet header
@@ -122,6 +128,14 @@ with open(RESSOURCE_PATH, 'rb') as f:
       print("Options length:", len(tcp["options"]))
       print("Payload length:", len(tcp["payload"]))
       print("Payload preview:", tcp["payload"][:32].hex())
+      print()
+    if udp is not None:
+      print(f"======Parsing UDP packet n°{packet_index}======")
+      print("Source port:", udp["src_port"])
+      print("Destination port:", udp["dst_port"])
+      print("Length:", udp["length"])
+      print("Checksum:", udp["checksum"])
+      print("Payload preview:", udp["payload"][:32].hex())
       print()
     # incrémente l'index
     packet_index += 1
