@@ -1,0 +1,6340 @@
+======Global-Header-Bytes======
+b'\xd4\xc3\xb2\xa1\x02\x00\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x01\x00\x00\x00'
+
+===================Parsing Packet n°1===================
+Timestamp seconds:  1780951002
+Timestamp microseconds:  994621
+Included length:  1119
+Original length:  1119
+======Packet Data packet n°1======
+Packet data length:  1119
+Packet data preview (32 bytes):  540df95027ff42ab8313b054080045020451000040004006bd13c0a8016aa27d
+======Parsing Ethernet packet n°1======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°1======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 1105
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 162.125.21.2
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°1======
+Source port: 55907
+Destination port: 443
+Sequence number: 2140118416
+Acknowledgment number: 3622056955
+Header length: 32
+Window: 2048
+Flags: ['PSH', 'ACK']
+Checksum: 23920
+Urgent pointer: 0
+Options length: 12
+Payload length: 1053
+Payload preview: 1703030418c48280140c7c59ea76fd3e443ab466f1661c14ccffb15d18d8a291
+
+===================Parsing Packet n°2===================
+Timestamp seconds:  1780951002
+Timestamp microseconds:  994817
+Included length:  1454
+Original length:  1454
+======Packet Data packet n°2======
+Packet data length:  1454
+Packet data preview (32 bytes):  540df95027ff42ab8313b0540800450205a0000040004006bbc4c0a8016aa27d
+======Parsing Ethernet packet n°2======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°2======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 1440
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 162.125.21.2
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°2======
+Source port: 55907
+Destination port: 443
+Sequence number: 2140119469
+Acknowledgment number: 3622056955
+Header length: 32
+Window: 2048
+Flags: ['ACK']
+Checksum: 59149
+Urgent pointer: 0
+Options length: 12
+Payload length: 1388
+Payload preview: 1703031e54c48280140c7c59ebc93c7fa637984cf5f2b677b0ddc6c7e49fffd2
+
+===================Parsing Packet n°3===================
+Timestamp seconds:  1780951002
+Timestamp microseconds:  994819
+Included length:  1454
+Original length:  1454
+======Packet Data packet n°3======
+Packet data length:  1454
+Packet data preview (32 bytes):  540df95027ff42ab8313b0540800450205a0000140004006bbc3c0a8016aa27d
+======Parsing Ethernet packet n°3======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°3======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 1440
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 162.125.21.2
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°3======
+Source port: 55907
+Destination port: 443
+Sequence number: 2140120857
+Acknowledgment number: 3622056955
+Header length: 32
+Window: 2048
+Flags: ['ACK']
+Checksum: 26331
+Urgent pointer: 0
+Options length: 12
+Payload length: 1388
+Payload preview: 1af0c52c67c3a33268823deed5f2ad933c3bb02c3073d2a1162773d7e0a20a17
+
+===================Parsing Packet n°4===================
+Timestamp seconds:  1780951002
+Timestamp microseconds:  994820
+Included length:  1454
+Original length:  1454
+======Packet Data packet n°4======
+Packet data length:  1454
+Packet data preview (32 bytes):  540df95027ff42ab8313b0540800450205a0000240004006bbc2c0a8016aa27d
+======Parsing Ethernet packet n°4======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°4======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 1440
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 162.125.21.2
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°4======
+Source port: 55907
+Destination port: 443
+Sequence number: 2140122245
+Acknowledgment number: 3622056955
+Header length: 32
+Window: 2048
+Flags: ['ACK']
+Checksum: 42962
+Urgent pointer: 0
+Options length: 12
+Payload length: 1388
+Payload preview: 9b0076b1250ddd8f4a199587275e4cfa3962e93107e47de44745a65a844a4799
+
+===================Parsing Packet n°5===================
+Timestamp seconds:  1780951002
+Timestamp microseconds:  994822
+Included length:  1454
+Original length:  1454
+======Packet Data packet n°5======
+Packet data length:  1454
+Packet data preview (32 bytes):  540df95027ff42ab8313b0540800450205a0000340004006bbc1c0a8016aa27d
+======Parsing Ethernet packet n°5======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°5======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 1440
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 162.125.21.2
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°5======
+Source port: 55907
+Destination port: 443
+Sequence number: 2140123633
+Acknowledgment number: 3622056955
+Header length: 32
+Window: 2048
+Flags: ['ACK']
+Checksum: 64893
+Urgent pointer: 0
+Options length: 12
+Payload length: 1388
+Payload preview: 6883574d619d4af7e59b71bae44af0950c23af78fb622f2fff4fa0b848ebd0b3
+
+===================Parsing Packet n°6===================
+Timestamp seconds:  1780951002
+Timestamp microseconds:  994824
+Included length:  1454
+Original length:  1454
+======Packet Data packet n°6======
+Packet data length:  1454
+Packet data preview (32 bytes):  540df95027ff42ab8313b0540800450205a0000440004006bbc0c0a8016aa27d
+======Parsing Ethernet packet n°6======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°6======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 1440
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 162.125.21.2
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°6======
+Source port: 55907
+Destination port: 443
+Sequence number: 2140125021
+Acknowledgment number: 3622056955
+Header length: 32
+Window: 2048
+Flags: ['ACK']
+Checksum: 14074
+Urgent pointer: 0
+Options length: 12
+Payload length: 1388
+Payload preview: ed6a43acfc3a3c18eda809375e091365f941207a8a16c12744a8d8b44f6c4b97
+
+===================Parsing Packet n°7===================
+Timestamp seconds:  1780951002
+Timestamp microseconds:  994844
+Included length:  895
+Original length:  895
+======Packet Data packet n°7======
+Packet data length:  895
+Packet data preview (32 bytes):  540df95027ff42ab8313b054080045020371000040004006bdf3c0a8016aa27d
+======Parsing Ethernet packet n°7======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°7======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 881
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 162.125.21.2
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°7======
+Source port: 55907
+Destination port: 443
+Sequence number: 2140126409
+Acknowledgment number: 3622056955
+Header length: 32
+Window: 2048
+Flags: ['PSH', 'ACK']
+Checksum: 14322
+Urgent pointer: 0
+Options length: 12
+Payload length: 829
+Payload preview: 857865f4bbb97e73427e20b1efa0540bc2b7c878d93453967224260a1a533e84
+
+===================Parsing Packet n°8===================
+Timestamp seconds:  1780951003
+Timestamp microseconds:  43135
+Included length:  66
+Original length:  66
+======Packet Data packet n°8======
+Packet data length:  66
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000034000040003c06c532a27d1502c0a8
+======Parsing Ethernet packet n°8======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°8======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 162.125.21.2
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°8======
+Source port: 443
+Destination port: 55907
+Sequence number: 3622056955
+Acknowledgment number: 2140119469
+Header length: 32
+Window: 125
+Flags: ['ACK']
+Checksum: 24058
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°9===================
+Timestamp seconds:  1780951003
+Timestamp microseconds:  43361
+Included length:  66
+Original length:  66
+======Packet Data packet n°9======
+Packet data length:  66
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000034000040003c06c532a27d1502c0a8
+======Parsing Ethernet packet n°9======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°9======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 162.125.21.2
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°9======
+Source port: 443
+Destination port: 55907
+Sequence number: 3622056955
+Acknowledgment number: 2140122245
+Header length: 32
+Window: 130
+Flags: ['ACK']
+Checksum: 21277
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°10===================
+Timestamp seconds:  1780951003
+Timestamp microseconds:  44325
+Included length:  66
+Original length:  66
+======Packet Data packet n°10======
+Packet data length:  66
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000034000040003c06c532a27d1502c0a8
+======Parsing Ethernet packet n°10======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°10======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 162.125.21.2
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°10======
+Source port: 443
+Destination port: 55907
+Sequence number: 3622056955
+Acknowledgment number: 2140125021
+Header length: 32
+Window: 130
+Flags: ['ACK']
+Checksum: 18500
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°11===================
+Timestamp seconds:  1780951003
+Timestamp microseconds:  44327
+Included length:  66
+Original length:  66
+======Packet Data packet n°11======
+Packet data length:  66
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000034000040003c06c532a27d1502c0a8
+======Parsing Ethernet packet n°11======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°11======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 162.125.21.2
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°11======
+Source port: 443
+Destination port: 55907
+Sequence number: 3622056955
+Acknowledgment number: 2140127238
+Header length: 32
+Window: 130
+Flags: ['ACK']
+Checksum: 16283
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°12===================
+Timestamp seconds:  1780951003
+Timestamp microseconds:  144019
+Included length:  1241
+Original length:  1241
+======Packet Data packet n°12======
+Packet data length:  1241
+Packet data preview (32 bytes):  42ab8313b054540df95027ff0800450004cb000040003c06c09ba27d1502c0a8
+======Parsing Ethernet packet n°12======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°12======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 1227
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 162.125.21.2
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°12======
+Source port: 443
+Destination port: 55907
+Sequence number: 3622056955
+Acknowledgment number: 2140127238
+Header length: 32
+Window: 130
+Flags: ['PSH', 'ACK']
+Checksum: 59433
+Urgent pointer: 0
+Options length: 12
+Payload length: 1175
+Payload preview: 170303049200000000000000082c9de2f88ffe812ea411e4f5ec3c31fe48b1f9
+
+===================Parsing Packet n°13===================
+Timestamp seconds:  1780951003
+Timestamp microseconds:  144241
+Included length:  66
+Original length:  66
+======Packet Data packet n°13======
+Packet data length:  66
+Packet data preview (32 bytes):  540df95027ff42ab8313b054080045000034000040004006c132c0a8016aa27d
+======Parsing Ethernet packet n°13======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°13======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 162.125.21.2
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°13======
+Source port: 55907
+Destination port: 443
+Sequence number: 2140127238
+Acknowledgment number: 3622058130
+Header length: 32
+Window: 2030
+Flags: ['ACK']
+Checksum: 12962
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°14===================
+Timestamp seconds:  1780951003
+Timestamp microseconds:  417899
+Included length:  1119
+Original length:  1119
+======Packet Data packet n°14======
+Packet data length:  1119
+Packet data preview (32 bytes):  540df95027ff42ab8313b054080045020451000040004006bd13c0a8016aa27d
+======Parsing Ethernet packet n°14======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°14======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 1105
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 162.125.21.2
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°14======
+Source port: 55889
+Destination port: 443
+Sequence number: 160454554
+Acknowledgment number: 2473052378
+Header length: 32
+Window: 2048
+Flags: ['PSH', 'ACK']
+Checksum: 37142
+Urgent pointer: 0
+Options length: 12
+Payload length: 1053
+Payload preview: 17030304180e8cb4650548addfc1150227ce86313b7f5730ce414ff7914defa6
+
+===================Parsing Packet n°15===================
+Timestamp seconds:  1780951003
+Timestamp microseconds:  447499
+Included length:  66
+Original length:  66
+======Packet Data packet n°15======
+Packet data length:  66
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000034000040003c06c532a27d1502c0a8
+======Parsing Ethernet packet n°15======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°15======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 162.125.21.2
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°15======
+Source port: 443
+Destination port: 55889
+Sequence number: 2473052378
+Acknowledgment number: 160455607
+Header length: 32
+Window: 72
+Flags: ['ACK']
+Checksum: 9514
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°16===================
+Timestamp seconds:  1780951003
+Timestamp microseconds:  447769
+Included length:  1291
+Original length:  1291
+======Packet Data packet n°16======
+Packet data length:  1291
+Packet data preview (32 bytes):  540df95027ff42ab8313b0540800450204fd000040004006bc67c0a8016aa27d
+======Parsing Ethernet packet n°16======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°16======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 1277
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 162.125.21.2
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°16======
+Source port: 55889
+Destination port: 443
+Sequence number: 160455607
+Acknowledgment number: 2473052378
+Header length: 32
+Window: 2048
+Flags: ['PSH', 'ACK']
+Checksum: 14396
+Urgent pointer: 0
+Options length: 12
+Payload length: 1225
+Payload preview: 17030304c40e8cb4650548ade00691044c6816a021f5ffdabd0d70fa92b42649
+
+===================Parsing Packet n°17===================
+Timestamp seconds:  1780951003
+Timestamp microseconds:  472973
+Included length:  66
+Original length:  66
+======Packet Data packet n°17======
+Packet data length:  66
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000034000040003c06c532a27d1502c0a8
+======Parsing Ethernet packet n°17======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°17======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 162.125.21.2
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°17======
+Source port: 443
+Destination port: 55889
+Sequence number: 2473052378
+Acknowledgment number: 160456832
+Header length: 32
+Window: 74
+Flags: ['ACK']
+Checksum: 8232
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°18===================
+Timestamp seconds:  1780951003
+Timestamp microseconds:  573944
+Included length:  298
+Original length:  298
+======Packet Data packet n°18======
+Packet data length:  298
+Packet data preview (32 bytes):  42ab8313b054540df95027ff08004500011c000040003c06c44aa27d1502c0a8
+======Parsing Ethernet packet n°18======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°18======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 284
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 162.125.21.2
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°18======
+Source port: 443
+Destination port: 55889
+Sequence number: 2473052378
+Acknowledgment number: 160456832
+Header length: 32
+Window: 74
+Flags: ['PSH', 'ACK']
+Checksum: 11119
+Urgent pointer: 0
+Options length: 12
+Payload length: 232
+Payload preview: 17030300e300000000000000095824374f9373741f01d371418c6ece68522052
+
+===================Parsing Packet n°19===================
+Timestamp seconds:  1780951003
+Timestamp microseconds:  574212
+Included length:  66
+Original length:  66
+======Packet Data packet n°19======
+Packet data length:  66
+Packet data preview (32 bytes):  540df95027ff42ab8313b054080045000034000040004006c132c0a8016aa27d
+======Parsing Ethernet packet n°19======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°19======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 162.125.21.2
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°19======
+Source port: 55889
+Destination port: 443
+Sequence number: 160456832
+Acknowledgment number: 2473052610
+Header length: 32
+Window: 2045
+Flags: ['ACK']
+Checksum: 5808
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°20===================
+Timestamp seconds:  1780951005
+Timestamp microseconds:  151811
+Included length:  207
+Original length:  207
+======Packet Data packet n°20======
+Packet data length:  207
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd600d7de9009906782a001450400608210000
+======Parsing Ethernet packet n°20======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°21===================
+Timestamp seconds:  1780951005
+Timestamp microseconds:  152353
+Included length:  86
+Original length:  86
+======Packet Data packet n°21======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd60040400002006402a04cec200056581a169
+======Parsing Ethernet packet n°21======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°22===================
+Timestamp seconds:  1780951005
+Timestamp microseconds:  315872
+Included length:  103
+Original length:  103
+======Packet Data packet n°22======
+Packet data length:  103
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd60080500003111402a04cec200056581a169
+======Parsing Ethernet packet n°22======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°23===================
+Timestamp seconds:  1780951005
+Timestamp microseconds:  344537
+Included length:  93
+Original length:  93
+======Packet Data packet n°23======
+Packet data length:  93
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd600e255d002711352a0226f701690000ace0
+======Parsing Ethernet packet n°23======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°24===================
+Timestamp seconds:  1780951009
+Timestamp microseconds:  853493
+Included length:  42
+Original length:  42
+======Packet Data packet n°24======
+Packet data length:  42
+Packet data preview (32 bytes):  42ab8313b054540df95027ff08060001080006040002540df95027ffc0a80101
+======Parsing Ethernet packet n°24======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0806 - ARP
+
+===================Parsing Packet n°25===================
+Timestamp seconds:  1780951010
+Timestamp microseconds:  169315
+Included length:  86
+Original length:  86
+======Packet Data packet n°25======
+Packet data length:  86
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd6000000000203afffe80000000000000560d
+======Parsing Ethernet packet n°25======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°26===================
+Timestamp seconds:  1780951010
+Timestamp microseconds:  169578
+Included length:  78
+Original length:  78
+======Packet Data packet n°26======
+Packet data length:  78
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd6000000000183afffe800000000000000831
+======Parsing Ethernet packet n°26======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°27===================
+Timestamp seconds:  1780951012
+Timestamp microseconds:  114025
+Included length:  60
+Original length:  60
+======Packet Data packet n°27======
+Packet data length:  60
+Packet data preview (32 bytes):  ffffffffffff540df95027ff08060001080006040001540df95027ffc0a80101
+======Parsing Ethernet packet n°27======
+Adresse MAC de destination: ff:ff:ff:ff:ff:ff
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0806 - ARP
+
+===================Parsing Packet n°28===================
+Timestamp seconds:  1780951013
+Timestamp microseconds:  139723
+Included length:  86
+Original length:  86
+======Packet Data packet n°28======
+Packet data length:  86
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd6000000000203afffe80000000000000560d
+======Parsing Ethernet packet n°28======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°29===================
+Timestamp seconds:  1780951013
+Timestamp microseconds:  139727
+Included length:  86
+Original length:  86
+======Packet Data packet n°29======
+Packet data length:  86
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd6000000000203afffe80000000000000560d
+======Parsing Ethernet packet n°29======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°30===================
+Timestamp seconds:  1780951013
+Timestamp microseconds:  140949
+Included length:  86
+Original length:  86
+======Packet Data packet n°30======
+Packet data length:  86
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd6000000000203afffe80000000000000560d
+======Parsing Ethernet packet n°30======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°31===================
+Timestamp seconds:  1780951014
+Timestamp microseconds:  582666
+Included length:  98
+Original length:  98
+======Packet Data packet n°31======
+Packet data length:  98
+Packet data preview (32 bytes):  540df95027ff42ab8313b05408004500005440b90000400175dcc0a8016a0101
+======Parsing Ethernet packet n°31======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°31======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 84
+TTL: 64
+Protocol: 1 - ICMP
+Source IP: 192.168.1.106
+Destination IP: 1.1.1.1
+Flags: 0
+Fragment offset: 0
+
+======Parsing ICMP packet n°31======
+Type ICMP: 8
+Code ICMP: 0
+Checksum ICMP: 6334
+Identifiant ICMP: 33434
+Numéro de séquence ICMP: 0
+Payload preview: 6a2727e60008df8e08090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+===================Parsing Packet n°32===================
+Timestamp seconds:  1780951014
+Timestamp microseconds:  605737
+Included length:  98
+Original length:  98
+======Packet Data packet n°32======
+Packet data length:  98
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000054000040003101859501010101c0a8
+======Parsing Ethernet packet n°32======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°32======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 84
+TTL: 49
+Protocol: 1 - ICMP
+Source IP: 1.1.1.1
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing ICMP packet n°32======
+Type ICMP: 0
+Code ICMP: 0
+Checksum ICMP: 8382
+Identifiant ICMP: 33434
+Numéro de séquence ICMP: 0
+Payload preview: 6a2727e60008df8e08090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+===================Parsing Packet n°33===================
+Timestamp seconds:  1780951015
+Timestamp microseconds:  224964
+Included length:  86
+Original length:  86
+======Packet Data packet n°33======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd6000000000203afffe800000000000000831
+======Parsing Ethernet packet n°33======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°34===================
+Timestamp seconds:  1780951015
+Timestamp microseconds:  234854
+Included length:  78
+Original length:  78
+======Packet Data packet n°34======
+Packet data length:  78
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd6000000000183afffe80000000000000560d
+======Parsing Ethernet packet n°34======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°35===================
+Timestamp seconds:  1780951015
+Timestamp microseconds:  589501
+Included length:  98
+Original length:  98
+======Packet Data packet n°35======
+Packet data length:  98
+Packet data preview (32 bytes):  540df95027ff42ab8313b0540800450000549230000040012465c0a8016a0101
+======Parsing Ethernet packet n°35======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°35======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 84
+TTL: 64
+Protocol: 1 - ICMP
+Source IP: 192.168.1.106
+Destination IP: 1.1.1.1
+Flags: 0
+Fragment offset: 0
+
+======Parsing ICMP packet n°35======
+Type ICMP: 8
+Code ICMP: 0
+Checksum ICMP: 115
+Identifiant ICMP: 33434
+Numéro de séquence ICMP: 1
+Payload preview: 6a2727e70008f7d708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+===================Parsing Packet n°36===================
+Timestamp seconds:  1780951015
+Timestamp microseconds:  611127
+Included length:  98
+Original length:  98
+======Packet Data packet n°36======
+Packet data length:  98
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000054000040003101859501010101c0a8
+======Parsing Ethernet packet n°36======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°36======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 84
+TTL: 49
+Protocol: 1 - ICMP
+Source IP: 1.1.1.1
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing ICMP packet n°36======
+Type ICMP: 0
+Code ICMP: 0
+Checksum ICMP: 2163
+Identifiant ICMP: 33434
+Numéro de séquence ICMP: 1
+Payload preview: 6a2727e70008f7d708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+===================Parsing Packet n°37===================
+Timestamp seconds:  1780951016
+Timestamp microseconds:  596022
+Included length:  98
+Original length:  98
+======Packet Data packet n°37======
+Packet data length:  98
+Packet data preview (32 bytes):  540df95027ff42ab8313b0540800450000542cc10000400189d4c0a8016a0101
+======Parsing Ethernet packet n°37======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°37======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 84
+TTL: 64
+Protocol: 1 - ICMP
+Source IP: 192.168.1.106
+Destination IP: 1.1.1.1
+Flags: 0
+Fragment offset: 0
+
+======Parsing ICMP packet n°37======
+Type ICMP: 8
+Code ICMP: 0
+Checksum ICMP: 59289
+Identifiant ICMP: 33434
+Numéro de séquence ICMP: 2
+Payload preview: 6a2727e8000910ae08090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+===================Parsing Packet n°38===================
+Timestamp seconds:  1780951016
+Timestamp microseconds:  615543
+Included length:  98
+Original length:  98
+======Packet Data packet n°38======
+Packet data length:  98
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000054000040003101859501010101c0a8
+======Parsing Ethernet packet n°38======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°38======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 84
+TTL: 49
+Protocol: 1 - ICMP
+Source IP: 1.1.1.1
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing ICMP packet n°38======
+Type ICMP: 0
+Code ICMP: 0
+Checksum ICMP: 61337
+Identifiant ICMP: 33434
+Numéro de séquence ICMP: 2
+Payload preview: 6a2727e8000910ae08090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+===================Parsing Packet n°39===================
+Timestamp seconds:  1780951017
+Timestamp microseconds:  603025
+Included length:  98
+Original length:  98
+======Packet Data packet n°39======
+Packet data length:  98
+Packet data preview (32 bytes):  540df95027ff42ab8313b05408004500005448ec000040016da9c0a8016a0101
+======Parsing Ethernet packet n°39======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°39======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 84
+TTL: 64
+Protocol: 1 - ICMP
+Source IP: 192.168.1.106
+Destination IP: 1.1.1.1
+Flags: 0
+Fragment offset: 0
+
+======Parsing ICMP packet n°39======
+Type ICMP: 8
+Code ICMP: 0
+Checksum ICMP: 52268
+Identifiant ICMP: 33434
+Numéro de séquence ICMP: 3
+Payload preview: 6a2727e900092c1908090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+===================Parsing Packet n°40===================
+Timestamp seconds:  1780951017
+Timestamp microseconds:  629294
+Included length:  98
+Original length:  98
+======Packet Data packet n°40======
+Packet data length:  98
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000054000040003101859501010101c0a8
+======Parsing Ethernet packet n°40======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°40======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 84
+TTL: 49
+Protocol: 1 - ICMP
+Source IP: 1.1.1.1
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing ICMP packet n°40======
+Type ICMP: 0
+Code ICMP: 0
+Checksum ICMP: 54316
+Identifiant ICMP: 33434
+Numéro de séquence ICMP: 3
+Payload preview: 6a2727e900092c1908090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+===================Parsing Packet n°41===================
+Timestamp seconds:  1780951018
+Timestamp microseconds:  610035
+Included length:  98
+Original length:  98
+======Packet Data packet n°41======
+Packet data length:  98
+Packet data preview (32 bytes):  540df95027ff42ab8313b054080045000054d2f800004001e39cc0a8016a0101
+======Parsing Ethernet packet n°41======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°41======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 84
+TTL: 64
+Protocol: 1 - ICMP
+Source IP: 192.168.1.106
+Destination IP: 1.1.1.1
+Flags: 0
+Fragment offset: 0
+
+======Parsing ICMP packet n°41======
+Type ICMP: 8
+Code ICMP: 0
+Checksum ICMP: 45264
+Identifiant ICMP: 33434
+Numéro de séquence ICMP: 4
+Payload preview: 6a2727ea0009477308090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+===================Parsing Packet n°42===================
+Timestamp seconds:  1780951018
+Timestamp microseconds:  631993
+Included length:  98
+Original length:  98
+======Packet Data packet n°42======
+Packet data length:  98
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000054000040003101859501010101c0a8
+======Parsing Ethernet packet n°42======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°42======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 84
+TTL: 49
+Protocol: 1 - ICMP
+Source IP: 1.1.1.1
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing ICMP packet n°42======
+Type ICMP: 0
+Code ICMP: 0
+Checksum ICMP: 47312
+Identifiant ICMP: 33434
+Numéro de séquence ICMP: 4
+Payload preview: 6a2727ea0009477308090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+===================Parsing Packet n°43===================
+Timestamp seconds:  1780951019
+Timestamp microseconds:  617087
+Included length:  98
+Original length:  98
+======Packet Data packet n°43======
+Packet data length:  98
+Packet data preview (32 bytes):  540df95027ff42ab8313b0540800450000547b47000040013b4ec0a8016a0101
+======Parsing Ethernet packet n°43======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°43======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 84
+TTL: 64
+Protocol: 1 - ICMP
+Source IP: 192.168.1.106
+Destination IP: 1.1.1.1
+Flags: 0
+Fragment offset: 0
+
+======Parsing ICMP packet n°43======
+Type ICMP: 8
+Code ICMP: 0
+Checksum ICMP: 38250
+Identifiant ICMP: 33434
+Numéro de séquence ICMP: 5
+Payload preview: 6a2727eb000962d708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+===================Parsing Packet n°44===================
+Timestamp seconds:  1780951019
+Timestamp microseconds:  620631
+Included length:  42
+Original length:  42
+======Packet Data packet n°44======
+Packet data length:  42
+Packet data preview (32 bytes):  42ab8313b054540df95027ff08060001080006040001540df95027ffc0a80101
+======Parsing Ethernet packet n°44======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0806 - ARP
+
+===================Parsing Packet n°45===================
+Timestamp seconds:  1780951019
+Timestamp microseconds:  620732
+Included length:  42
+Original length:  42
+======Packet Data packet n°45======
+Packet data length:  42
+Packet data preview (32 bytes):  540df95027ff42ab8313b0540806000108000604000242ab8313b054c0a8016a
+======Parsing Ethernet packet n°45======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0806 - ARP
+
+===================Parsing Packet n°46===================
+Timestamp seconds:  1780951019
+Timestamp microseconds:  639774
+Included length:  98
+Original length:  98
+======Packet Data packet n°46======
+Packet data length:  98
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000054000040003101859501010101c0a8
+======Parsing Ethernet packet n°46======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°46======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 84
+TTL: 49
+Protocol: 1 - ICMP
+Source IP: 1.1.1.1
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing ICMP packet n°46======
+Type ICMP: 0
+Code ICMP: 0
+Checksum ICMP: 40298
+Identifiant ICMP: 33434
+Numéro de séquence ICMP: 5
+Payload preview: 6a2727eb000962d708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+===================Parsing Packet n°47===================
+Timestamp seconds:  1780951020
+Timestamp microseconds:  491111
+Included length:  66
+Original length:  66
+======Packet Data packet n°47======
+Packet data length:  66
+Packet data preview (32 bytes):  42d8d8b650ef42ab8313b05486dd60090a00000c1140fe800000000000000831
+======Parsing Ethernet packet n°47======
+Adresse MAC de destination: 42:d8:d8:b6:50:ef
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°48===================
+Timestamp seconds:  1780951020
+Timestamp microseconds:  619756
+Included length:  98
+Original length:  98
+======Packet Data packet n°48======
+Packet data length:  98
+Packet data preview (32 bytes):  540df95027ff42ab8313b054080045000054067400004001b021c0a8016a0101
+======Parsing Ethernet packet n°48======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°48======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 84
+TTL: 64
+Protocol: 1 - ICMP
+Source IP: 192.168.1.106
+Destination IP: 1.1.1.1
+Flags: 0
+Fragment offset: 0
+
+======Parsing ICMP packet n°48======
+Type ICMP: 8
+Code ICMP: 0
+Checksum ICMP: 35112
+Identifiant ICMP: 33434
+Numéro de séquence ICMP: 6
+Payload preview: 6a2727ec00096f1708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+===================Parsing Packet n°49===================
+Timestamp seconds:  1780951020
+Timestamp microseconds:  641228
+Included length:  98
+Original length:  98
+======Packet Data packet n°49======
+Packet data length:  98
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000054000040003101859501010101c0a8
+======Parsing Ethernet packet n°49======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°49======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 84
+TTL: 49
+Protocol: 1 - ICMP
+Source IP: 1.1.1.1
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing ICMP packet n°49======
+Type ICMP: 0
+Code ICMP: 0
+Checksum ICMP: 37160
+Identifiant ICMP: 33434
+Numéro de séquence ICMP: 6
+Payload preview: 6a2727ec00096f1708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+===================Parsing Packet n°50===================
+Timestamp seconds:  1780951021
+Timestamp microseconds:  626856
+Included length:  98
+Original length:  98
+======Packet Data packet n°50======
+Packet data length:  98
+Packet data preview (32 bytes):  540df95027ff42ab8313b05408004500005430fd000040018598c0a8016a0101
+======Parsing Ethernet packet n°50======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°50======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 84
+TTL: 64
+Protocol: 1 - ICMP
+Source IP: 192.168.1.106
+Destination IP: 1.1.1.1
+Flags: 0
+Fragment offset: 0
+
+======Parsing ICMP packet n°50======
+Type ICMP: 8
+Code ICMP: 0
+Checksum ICMP: 28523
+Identifiant ICMP: 33434
+Numéro de séquence ICMP: 7
+Payload preview: 6a2727ed000988d208090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+===================Parsing Packet n°51===================
+Timestamp seconds:  1780951021
+Timestamp microseconds:  645898
+Included length:  98
+Original length:  98
+======Packet Data packet n°51======
+Packet data length:  98
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000054000040003101859501010101c0a8
+======Parsing Ethernet packet n°51======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°51======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 84
+TTL: 49
+Protocol: 1 - ICMP
+Source IP: 1.1.1.1
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing ICMP packet n°51======
+Type ICMP: 0
+Code ICMP: 0
+Checksum ICMP: 30571
+Identifiant ICMP: 33434
+Numéro de séquence ICMP: 7
+Payload preview: 6a2727ed000988d208090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+===================Parsing Packet n°52===================
+Timestamp seconds:  1780951022
+Timestamp microseconds:  633825
+Included length:  98
+Original length:  98
+======Packet Data packet n°52======
+Packet data length:  98
+Packet data preview (32 bytes):  540df95027ff42ab8313b054080045000054de0b00004001d889c0a8016a0101
+======Parsing Ethernet packet n°52======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°52======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 84
+TTL: 64
+Protocol: 1 - ICMP
+Source IP: 192.168.1.106
+Destination IP: 1.1.1.1
+Flags: 0
+Fragment offset: 0
+
+======Parsing ICMP packet n°52======
+Type ICMP: 8
+Code ICMP: 0
+Checksum ICMP: 21430
+Identifiant ICMP: 33434
+Numéro de séquence ICMP: 8
+Payload preview: 6a2727ee0009a48508090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+===================Parsing Packet n°53===================
+Timestamp seconds:  1780951022
+Timestamp microseconds:  654247
+Included length:  98
+Original length:  98
+======Packet Data packet n°53======
+Packet data length:  98
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000054000040003101859501010101c0a8
+======Parsing Ethernet packet n°53======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°53======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 84
+TTL: 49
+Protocol: 1 - ICMP
+Source IP: 1.1.1.1
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing ICMP packet n°53======
+Type ICMP: 0
+Code ICMP: 0
+Checksum ICMP: 23478
+Identifiant ICMP: 33434
+Numéro de séquence ICMP: 8
+Payload preview: 6a2727ee0009a48508090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+===================Parsing Packet n°54===================
+Timestamp seconds:  1780951023
+Timestamp microseconds:  640872
+Included length:  98
+Original length:  98
+======Packet Data packet n°54======
+Packet data length:  98
+Packet data preview (32 bytes):  540df95027ff42ab8313b054080045000054063600004001b05fc0a8016a0101
+======Parsing Ethernet packet n°54======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°54======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 84
+TTL: 64
+Protocol: 1 - ICMP
+Source IP: 192.168.1.106
+Destination IP: 1.1.1.1
+Flags: 0
+Fragment offset: 0
+
+======Parsing ICMP packet n°54======
+Type ICMP: 8
+Code ICMP: 0
+Checksum ICMP: 14449
+Identifiant ICMP: 33434
+Numéro de séquence ICMP: 9
+Payload preview: 6a2727ef0009bfc808090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+===================Parsing Packet n°55===================
+Timestamp seconds:  1780951023
+Timestamp microseconds:  661265
+Included length:  98
+Original length:  98
+======Packet Data packet n°55======
+Packet data length:  98
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000054000040003101859501010101c0a8
+======Parsing Ethernet packet n°55======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°55======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 84
+TTL: 49
+Protocol: 1 - ICMP
+Source IP: 1.1.1.1
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing ICMP packet n°55======
+Type ICMP: 0
+Code ICMP: 0
+Checksum ICMP: 16497
+Identifiant ICMP: 33434
+Numéro de séquence ICMP: 9
+Payload preview: 6a2727ef0009bfc808090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+
+===================Parsing Packet n°56===================
+Timestamp seconds:  1780951025
+Timestamp microseconds:  222320
+Included length:  207
+Original length:  207
+======Packet Data packet n°56======
+Packet data length:  207
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd600d7de9009906782a001450400608210000
+======Parsing Ethernet packet n°56======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°57===================
+Timestamp seconds:  1780951025
+Timestamp microseconds:  222886
+Included length:  86
+Original length:  86
+======Packet Data packet n°57======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd60040400002006402a04cec200056581a169
+======Parsing Ethernet packet n°57======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°58===================
+Timestamp seconds:  1780951025
+Timestamp microseconds:  310268
+Included length:  104
+Original length:  104
+======Packet Data packet n°58======
+Packet data length:  104
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd60080500003211402a04cec200056581a169
+======Parsing Ethernet packet n°58======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°59===================
+Timestamp seconds:  1780951025
+Timestamp microseconds:  334141
+Included length:  86
+Original length:  86
+======Packet Data packet n°59======
+Packet data length:  86
+Packet data preview (32 bytes):  42d8d8b650ef42ab8313b05486dd6000000000203afffe800000000000000831
+======Parsing Ethernet packet n°59======
+Adresse MAC de destination: 42:d8:d8:b6:50:ef
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°60===================
+Timestamp seconds:  1780951025
+Timestamp microseconds:  444907
+Included length:  86
+Original length:  86
+======Packet Data packet n°60======
+Packet data length:  86
+Packet data preview (32 bytes):  42ab8313b05442d8d8b650ef86dd6000000000203afffe8000000000000000fb
+======Parsing Ethernet packet n°60======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 42:d8:d8:b6:50:ef
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°61===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  682855
+Included length:  169
+Original length:  169
+======Packet Data packet n°61======
+Packet data length:  169
+Packet data preview (32 bytes):  01005e0000fb42ab8313b05408004500009be76a0000ff1130d9c0a8016ae000
+======Parsing Ethernet packet n°61======
+Adresse MAC de destination: 01:00:5e:00:00:fb
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°61======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 155
+TTL: 255
+Protocol: 17 - UDP
+Source IP: 192.168.1.106
+Destination IP: 224.0.0.251
+Flags: 0
+Fragment offset: 0
+
+======Parsing UDP packet n°61======
+Source port: 5353
+Destination port: 5353
+Length: 135
+Checksum: 16352
+Payload preview: 0000000000040002000000000b5f6166706f766572746370045f746370056c6f
+
+===================Parsing Packet n°62===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  682961
+Included length:  189
+Original length:  189
+======Packet Data packet n°62======
+Packet data length:  189
+Packet data preview (32 bytes):  3333000000fb42ab8313b05486dd600b0a00008711fffe800000000000000831
+======Parsing Ethernet packet n°62======
+Adresse MAC de destination: 33:33:00:00:00:fb
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°63===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  750274
+Included length:  79
+Original length:  79
+======Packet Data packet n°63======
+Packet data length:  79
+Packet data preview (32 bytes):  540df95027ff42ab8313b054080045000041e21300004011d484c0a8016a0101
+======Parsing Ethernet packet n°63======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°63======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 65
+TTL: 64
+Protocol: 17 - UDP
+Source IP: 192.168.1.106
+Destination IP: 1.1.1.1
+Flags: 0
+Fragment offset: 0
+
+======Parsing UDP packet n°63======
+Source port: 18686
+Destination port: 53
+Length: 45
+Checksum: 51587
+Payload preview: d8ea01000001000000000000046d61696e0a7673636f64652d63646e036e6574
+
+===================Parsing Packet n°64===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  750488
+Included length:  79
+Original length:  79
+======Packet Data packet n°64======
+Packet data length:  79
+Packet data preview (32 bytes):  540df95027ff42ab8313b054080045000041f57000004011c127c0a8016a0101
+======Parsing Ethernet packet n°64======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°64======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 65
+TTL: 64
+Protocol: 17 - UDP
+Source IP: 192.168.1.106
+Destination IP: 1.1.1.1
+Flags: 0
+Fragment offset: 0
+
+======Parsing UDP packet n°64======
+Source port: 26837
+Destination port: 53
+Length: 45
+Checksum: 63001
+Payload preview: b17d01000001000000000000046d61696e0a7673636f64652d63646e036e6574
+
+===================Parsing Packet n°65===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  750589
+Included length:  79
+Original length:  79
+======Packet Data packet n°65======
+Packet data length:  79
+Packet data preview (32 bytes):  540df95027ff42ab8313b054080045000041a35900004011133fc0a8016a0101
+======Parsing Ethernet packet n°65======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°65======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 65
+TTL: 64
+Protocol: 17 - UDP
+Source IP: 192.168.1.106
+Destination IP: 1.1.1.1
+Flags: 0
+Fragment offset: 0
+
+======Parsing UDP packet n°65======
+Source port: 46616
+Destination port: 53
+Length: 45
+Checksum: 16291
+Payload preview: 35b101000001000000000000046d61696e0a7673636f64652d63646e036e6574
+
+===================Parsing Packet n°66===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  774526
+Included length:  256
+Original length:  256
+======Packet Data packet n°66======
+Packet data length:  256
+Packet data preview (32 bytes):  42ab8313b054540df95027ff0800450000f200004000331182e701010101c0a8
+======Parsing Ethernet packet n°66======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°66======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 242
+TTL: 51
+Protocol: 17 - UDP
+Source IP: 1.1.1.1
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing UDP packet n°66======
+Source port: 53
+Destination port: 18686
+Length: 222
+Checksum: 20058
+Payload preview: d8ea81800001000300010000046d61696e0a7673636f64652d63646e036e6574
+
+===================Parsing Packet n°67===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  778184
+Included length:  242
+Original length:  242
+======Packet Data packet n°67======
+Packet data length:  242
+Packet data preview (32 bytes):  42ab8313b054540df95027ff0800450000e400004000331182f501010101c0a8
+======Parsing Ethernet packet n°67======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°67======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 228
+TTL: 51
+Protocol: 17 - UDP
+Source IP: 1.1.1.1
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing UDP packet n°67======
+Source port: 53
+Destination port: 46616
+Length: 208
+Checksum: 7422
+Payload preview: 35b181800001000600000000046d61696e0a7673636f64652d63646e036e6574
+
+===================Parsing Packet n°68===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  778186
+Included length:  266
+Original length:  266
+======Packet Data packet n°68======
+Packet data length:  266
+Packet data preview (32 bytes):  42ab8313b054540df95027ff0800450000fc00004000331182dd01010101c0a8
+======Parsing Ethernet packet n°68======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°68======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 252
+TTL: 51
+Protocol: 17 - UDP
+Source IP: 1.1.1.1
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing UDP packet n°68======
+Source port: 53
+Destination port: 26837
+Length: 232
+Checksum: 48627
+Payload preview: b17d81800001000600000000046d61696e0a7673636f64652d63646e036e6574
+
+===================Parsing Packet n°69===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  782932
+Included length:  98
+Original length:  98
+======Packet Data packet n°69======
+Packet data length:  98
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002c06402a04cec200056581a169
+======Parsing Ethernet packet n°69======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°70===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  814029
+Included length:  94
+Original length:  94
+======Packet Data packet n°70======
+Packet data length:  94
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd600e39c700280631262001ec004800010000
+======Parsing Ethernet packet n°70======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°71===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  814291
+Included length:  86
+Original length:  86
+======Packet Data packet n°71======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°71======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°72===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  819940
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°72======
+Packet data length:  1474
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd602c0b00058c06402a04cec200056581a169
+======Parsing Ethernet packet n°72======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°73===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  819962
+Included length:  762
+Original length:  762
+======Packet Data packet n°73======
+Packet data length:  762
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd602c0b0002c406402a04cec200056581a169
+======Parsing Ethernet packet n°73======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°74===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  859815
+Included length:  86
+Original length:  86
+======Packet Data packet n°74======
+Packet data length:  86
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd600e39c700200631262001ec004800010000
+======Parsing Ethernet packet n°74======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°75===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  859818
+Included length:  185
+Original length:  185
+======Packet Data packet n°75======
+Packet data length:  185
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c700830631262001ec004800010000
+======Parsing Ethernet packet n°75======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°76===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  860086
+Included length:  86
+Original length:  86
+======Packet Data packet n°76======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°76======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°77===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  860907
+Included length:  964
+Original length:  964
+======Packet Data packet n°77======
+Packet data length:  964
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd602c0b00038e06402a04cec200056581a169
+======Parsing Ethernet packet n°77======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°78===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  904703
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°78======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°78======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°79===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  904706
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°79======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°79======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°80===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  904708
+Included length:  1406
+Original length:  1406
+======Packet Data packet n°80======
+Packet data length:  1406
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c705480631262001ec004800010000
+======Parsing Ethernet packet n°80======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°81===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  904711
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°81======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°81======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°82===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  904914
+Included length:  86
+Original length:  86
+======Packet Data packet n°82======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°82======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°83===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  905010
+Included length:  86
+Original length:  86
+======Packet Data packet n°83======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°83======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°84===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  905369
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°84======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°84======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°85===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  905371
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°85======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°85======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°86===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  905373
+Included length:  604
+Original length:  604
+======Packet Data packet n°86======
+Packet data length:  604
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c702260631262001ec004800010000
+======Parsing Ethernet packet n°86======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°87===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  905450
+Included length:  86
+Original length:  86
+======Packet Data packet n°87======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°87======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°88===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  905603
+Included length:  86
+Original length:  86
+======Packet Data packet n°88======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°88======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°89===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  914003
+Included length:  446
+Original length:  446
+======Packet Data packet n°89======
+Packet data length:  446
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c701880631262001ec004800010000
+======Parsing Ethernet packet n°89======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°90===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  914114
+Included length:  86
+Original length:  86
+======Packet Data packet n°90======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°90======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°91===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  915115
+Included length:  160
+Original length:  160
+======Packet Data packet n°91======
+Packet data length:  160
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd602c0b00006a06402a04cec200056581a169
+======Parsing Ethernet packet n°91======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°92===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  915931
+Included length:  178
+Original length:  178
+======Packet Data packet n°92======
+Packet data length:  178
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd602c0b00007c06402a04cec200056581a169
+======Parsing Ethernet packet n°92======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°93===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  917958
+Included length:  362
+Original length:  362
+======Packet Data packet n°93======
+Packet data length:  362
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd602c0b00013406402a04cec200056581a169
+======Parsing Ethernet packet n°93======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°94===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  945530
+Included length:  373
+Original length:  373
+======Packet Data packet n°94======
+Packet data length:  373
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7013f0631262001ec004800010000
+======Parsing Ethernet packet n°94======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°95===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  945571
+Included length:  373
+Original length:  373
+======Packet Data packet n°95======
+Packet data length:  373
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7013f0631262001ec004800010000
+======Parsing Ethernet packet n°95======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°96===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  945693
+Included length:  86
+Original length:  86
+======Packet Data packet n°96======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°96======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°97===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  945758
+Included length:  86
+Original length:  86
+======Packet Data packet n°97======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°97======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°98===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  950316
+Included length:  148
+Original length:  148
+======Packet Data packet n°98======
+Packet data length:  148
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7005e0631262001ec004800010000
+======Parsing Ethernet packet n°98======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°99===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  950318
+Included length:  117
+Original length:  117
+======Packet Data packet n°99======
+Packet data length:  117
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7003f0631262001ec004800010000
+======Parsing Ethernet packet n°99======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°100===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  950395
+Included length:  86
+Original length:  86
+======Packet Data packet n°100======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°100======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°101===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  950432
+Included length:  86
+Original length:  86
+======Packet Data packet n°101======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°101======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°102===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  950887
+Included length:  117
+Original length:  117
+======Packet Data packet n°102======
+Packet data length:  117
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd602c0b00003f06402a04cec200056581a169
+======Parsing Ethernet packet n°102======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°103===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  961361
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°103======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°103======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°104===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  961363
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°104======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°104======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°105===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  961485
+Included length:  86
+Original length:  86
+======Packet Data packet n°105======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°105======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°106===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  963372
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°106======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°106======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°107===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  963375
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°107======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°107======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°108===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  963458
+Included length:  86
+Original length:  86
+======Packet Data packet n°108======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°108======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°109===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  964041
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°109======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°109======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°110===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  964043
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°110======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°110======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°111===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  964077
+Included length:  86
+Original length:  86
+======Packet Data packet n°111======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°111======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°112===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  968721
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°112======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°112======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°113===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  968723
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°113======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°113======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°114===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  968826
+Included length:  86
+Original length:  86
+======Packet Data packet n°114======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°114======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°115===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  970637
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°115======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°115======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°116===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  970639
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°116======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°116======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°117===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  970726
+Included length:  86
+Original length:  86
+======Packet Data packet n°117======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°117======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°118===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  972293
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°118======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°118======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°119===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  972295
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°119======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°119======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°120===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  972341
+Included length:  86
+Original length:  86
+======Packet Data packet n°120======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°120======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°121===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  974114
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°121======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°121======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°122===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  974117
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°122======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°122======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°123===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  974165
+Included length:  86
+Original length:  86
+======Packet Data packet n°123======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°123======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°124===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  975360
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°124======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°124======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°125===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  975362
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°125======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°125======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°126===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  975423
+Included length:  86
+Original length:  86
+======Packet Data packet n°126======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°126======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°127===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  977380
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°127======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°127======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°128===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  977381
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°128======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°128======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°129===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  977437
+Included length:  86
+Original length:  86
+======Packet Data packet n°129======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°129======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°130===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  980343
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°130======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°130======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°131===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  980346
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°131======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°131======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°132===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  980420
+Included length:  86
+Original length:  86
+======Packet Data packet n°132======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°132======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°133===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  981446
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°133======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°133======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°134===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  981448
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°134======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°134======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°135===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  981488
+Included length:  86
+Original length:  86
+======Packet Data packet n°135======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°135======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°136===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  984157
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°136======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°136======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°137===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  984220
+Included length:  86
+Original length:  86
+======Packet Data packet n°137======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°137======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°138===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  992203
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°138======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°138======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°139===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  992206
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°139======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°139======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°140===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  992349
+Included length:  86
+Original length:  86
+======Packet Data packet n°140======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°140======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°141===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  993317
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°141======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°141======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°142===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  993319
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°142======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°142======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°143===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  993361
+Included length:  86
+Original length:  86
+======Packet Data packet n°143======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°143======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°144===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  993962
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°144======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°144======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°145===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  993964
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°145======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°145======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°146===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  994015
+Included length:  86
+Original length:  86
+======Packet Data packet n°146======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°146======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°147===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  997545
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°147======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°147======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°148===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  997548
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°148======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°148======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°149===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  997592
+Included length:  86
+Original length:  86
+======Packet Data packet n°149======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°149======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°150===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  999369
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°150======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°150======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°151===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  999371
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°151======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°151======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°152===================
+Timestamp seconds:  1780951026
+Timestamp microseconds:  999460
+Included length:  86
+Original length:  86
+======Packet Data packet n°152======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°152======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°153===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  1364
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°153======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°153======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°154===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  1366
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°154======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°154======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°155===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  1420
+Included length:  86
+Original length:  86
+======Packet Data packet n°155======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°155======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°156===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  3543
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°156======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°156======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°157===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  3544
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°157======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°157======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°158===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  3592
+Included length:  86
+Original length:  86
+======Packet Data packet n°158======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°158======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°159===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  4016
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°159======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°159======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°160===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  4019
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°160======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°160======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°161===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  4051
+Included length:  86
+Original length:  86
+======Packet Data packet n°161======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°161======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°162===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  7875
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°162======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°162======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°163===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  7878
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°163======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°163======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°164===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  7988
+Included length:  86
+Original length:  86
+======Packet Data packet n°164======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°164======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°165===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  9342
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°165======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°165======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°166===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  9344
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°166======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°166======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°167===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  9401
+Included length:  86
+Original length:  86
+======Packet Data packet n°167======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°167======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°168===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  11410
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°168======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°168======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°169===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  11412
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°169======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°169======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°170===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  11474
+Included length:  86
+Original length:  86
+======Packet Data packet n°170======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°170======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°171===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  12638
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°171======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°171======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°172===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  12640
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°172======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°172======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°173===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  12674
+Included length:  86
+Original length:  86
+======Packet Data packet n°173======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°173======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°174===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  13623
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°174======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°174======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°175===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  13625
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°175======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°175======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°176===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  13644
+Included length:  86
+Original length:  86
+======Packet Data packet n°176======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°176======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°177===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  14264
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°177======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°177======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°178===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  14267
+Included length:  1474
+Original length:  1474
+======Packet Data packet n°178======
+Packet data length:  1474
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7058c0631262001ec004800010000
+======Parsing Ethernet packet n°178======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°179===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  14324
+Included length:  86
+Original length:  86
+======Packet Data packet n°179======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°179======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°180===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  23976
+Included length:  595
+Original length:  595
+======Packet Data packet n°180======
+Packet data length:  595
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601e39c7021d0631262001ec004800010000
+======Parsing Ethernet packet n°180======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°181===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  24113
+Included length:  86
+Original length:  86
+======Packet Data packet n°181======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd600c0b00002006402a04cec200056581a169
+======Parsing Ethernet packet n°181======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°182===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  930389
+Included length:  90
+Original length:  90
+======Packet Data packet n°182======
+Packet data length:  90
+Packet data preview (32 bytes):  540df95027ff42ab8313b05408004500004cb65a000040110033c0a8016a0101
+======Parsing Ethernet packet n°182======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°182======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 76
+TTL: 64
+Protocol: 17 - UDP
+Source IP: 192.168.1.106
+Destination IP: 1.1.1.1
+Flags: 0
+Fragment offset: 0
+
+======Parsing UDP packet n°182======
+Source port: 60442
+Destination port: 53
+Length: 56
+Checksum: 41686
+Payload preview: 8d87010000010000000000000b7673636f64652d73796e630e74726166666963
+
+===================Parsing Packet n°183===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  930629
+Included length:  90
+Original length:  90
+======Packet Data packet n°183======
+Packet data length:  90
+Packet data preview (32 bytes):  540df95027ff42ab8313b05408004500004c8808000040112e85c0a8016a0101
+======Parsing Ethernet packet n°183======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°183======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 76
+TTL: 64
+Protocol: 17 - UDP
+Source IP: 192.168.1.106
+Destination IP: 1.1.1.1
+Flags: 0
+Fragment offset: 0
+
+======Parsing UDP packet n°183======
+Source port: 24423
+Destination port: 53
+Length: 56
+Checksum: 61130
+Payload preview: ce6b010000010000000000000b7673636f64652d73796e630e74726166666963
+
+===================Parsing Packet n°184===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  930800
+Included length:  90
+Original length:  90
+======Packet Data packet n°184======
+Packet data length:  90
+Packet data preview (32 bytes):  540df95027ff42ab8313b05408004500004cf1c100004011c4cbc0a8016a0101
+======Parsing Ethernet packet n°184======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°184======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 76
+TTL: 64
+Protocol: 17 - UDP
+Source IP: 192.168.1.106
+Destination IP: 1.1.1.1
+Flags: 0
+Fragment offset: 0
+
+======Parsing UDP packet n°184======
+Source port: 30273
+Destination port: 53
+Length: 56
+Checksum: 32754
+Payload preview: 2685010000010000000000000b7673636f64652d73796e630e74726166666963
+
+===================Parsing Packet n°185===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  964077
+Included length:  334
+Original length:  334
+======Packet Data packet n°185======
+Packet data length:  334
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000140000040003311829901010101c0a8
+======Parsing Ethernet packet n°185======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°185======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 320
+TTL: 51
+Protocol: 17 - UDP
+Source IP: 1.1.1.1
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing UDP packet n°185======
+Source port: 53
+Destination port: 24423
+Length: 300
+Checksum: 20366
+Payload preview: ce6b818000010003000100000b7673636f64652d73796e630e74726166666963
+
+===================Parsing Packet n°186===================
+Timestamp seconds:  1780951027
+Timestamp microseconds:  984785
+Included length:  334
+Original length:  334
+======Packet Data packet n°186======
+Packet data length:  334
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000140000040003311829901010101c0a8
+======Parsing Ethernet packet n°186======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°186======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 320
+TTL: 51
+Protocol: 17 - UDP
+Source IP: 1.1.1.1
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing UDP packet n°186======
+Source port: 53
+Destination port: 60442
+Length: 300
+Checksum: 62860
+Payload preview: 8d87818000010003000100000b7673636f64652d73796e630e74726166666963
+
+===================Parsing Packet n°187===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  4187
+Included length:  280
+Original length:  280
+======Packet Data packet n°187======
+Packet data length:  280
+Packet data preview (32 bytes):  42ab8313b054540df95027ff08004500010a00004000331182cf01010101c0a8
+======Parsing Ethernet packet n°187======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°187======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 266
+TTL: 51
+Protocol: 17 - UDP
+Source IP: 1.1.1.1
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing UDP packet n°187======
+Source port: 53
+Destination port: 30273
+Length: 246
+Checksum: 38690
+Payload preview: 2685818000010004000000000b7673636f64652d73796e630e74726166666963
+
+===================Parsing Packet n°188===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  5608
+Included length:  78
+Original length:  78
+======Packet Data packet n°188======
+Packet data length:  78
+Packet data preview (32 bytes):  540df95027ff42ab8313b0540800450000400000400040066334c0a8016a146f
+======Parsing Ethernet packet n°188======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°188======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 64
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 20.111.1.3
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°188======
+Source port: 55974
+Destination port: 443
+Sequence number: 2216593682
+Acknowledgment number: 0
+Header length: 44
+Window: 65535
+Flags: ['SYN']
+Checksum: 19756
+Urgent pointer: 0
+Options length: 24
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°189===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  33975
+Included length:  74
+Original length:  74
+======Packet Data packet n°189======
+Packet data length:  74
+Packet data preview (32 bytes):  42ab8313b054540df95027ff08004500003c000040003c066738146f0103c0a8
+======Parsing Ethernet packet n°189======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°189======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 60
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 20.111.1.3
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°189======
+Source port: 443
+Destination port: 55974
+Sequence number: 3679718988
+Acknowledgment number: 2216593683
+Header length: 40
+Window: 22400
+Flags: ['SYN', 'ACK']
+Checksum: 25479
+Urgent pointer: 0
+Options length: 20
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°190===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  34202
+Included length:  66
+Original length:  66
+======Packet Data packet n°190======
+Packet data length:  66
+Packet data preview (32 bytes):  540df95027ff42ab8313b0540800450000340000400040066340c0a8016a146f
+======Parsing Ethernet packet n°190======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°190======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 20.111.1.3
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°190======
+Source port: 55974
+Destination port: 443
+Sequence number: 2216593683
+Acknowledgment number: 3679718989
+Header length: 32
+Window: 2061
+Flags: ['ACK']
+Checksum: 57776
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°191===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  34770
+Included length:  1454
+Original length:  1454
+======Packet Data packet n°191======
+Packet data length:  1454
+Packet data preview (32 bytes):  540df95027ff42ab8313b0540800450205a00000400040065dd2c0a8016a146f
+======Parsing Ethernet packet n°191======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°191======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 1440
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 20.111.1.3
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°191======
+Source port: 55974
+Destination port: 443
+Sequence number: 2216593683
+Acknowledgment number: 3679718989
+Header length: 32
+Window: 2061
+Flags: ['ACK']
+Checksum: 44545
+Urgent pointer: 0
+Options length: 12
+Payload length: 1388
+Payload preview: 1603010786010007820303a0bdd693fd1bfeeb695792b22efe2124b4df593ee8
+
+===================Parsing Packet n°192===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  34799
+Included length:  609
+Original length:  609
+======Packet Data packet n°192======
+Packet data length:  609
+Packet data preview (32 bytes):  540df95027ff42ab8313b054080045020253000040004006611fc0a8016a146f
+======Parsing Ethernet packet n°192======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°192======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 595
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 20.111.1.3
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°192======
+Source port: 55974
+Destination port: 443
+Sequence number: 2216595071
+Acknowledgment number: 3679718989
+Header length: 32
+Window: 2061
+Flags: ['PSH', 'ACK']
+Checksum: 15093
+Urgent pointer: 0
+Options length: 12
+Payload length: 543
+Payload preview: 7970339db4e5a2716aa59915010334c5939ca3faa2340213a20fe6b1849054c9
+
+===================Parsing Packet n°193===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  70494
+Included length:  66
+Original length:  66
+======Packet Data packet n°193======
+Packet data length:  66
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000034000040003c066740146f0103c0a8
+======Parsing Ethernet packet n°193======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°193======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 20.111.1.3
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°193======
+Source port: 443
+Destination port: 55974
+Sequence number: 3679718989
+Acknowledgment number: 2216595614
+Header length: 32
+Window: 47
+Flags: ['ACK']
+Checksum: 57812
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°194===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  94071
+Included length:  165
+Original length:  165
+======Packet Data packet n°194======
+Packet data length:  165
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000097000040003c0666dd146f0103c0a8
+======Parsing Ethernet packet n°194======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°194======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 151
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 20.111.1.3
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°194======
+Source port: 443
+Destination port: 55974
+Sequence number: 3679718989
+Acknowledgment number: 2216595614
+Header length: 32
+Window: 47
+Flags: ['PSH', 'ACK']
+Checksum: 21059
+Urgent pointer: 0
+Options length: 12
+Payload length: 99
+Payload preview: 1603030058020000540303cf21ad74e59a6111be1d8c021e65b891c2a211167a
+
+===================Parsing Packet n°195===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  94278
+Included length:  66
+Original length:  66
+======Packet Data packet n°195======
+Packet data length:  66
+Packet data preview (32 bytes):  540df95027ff42ab8313b0540800450000340000400040066340c0a8016a146f
+======Parsing Ethernet packet n°195======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°195======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 20.111.1.3
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°195======
+Source port: 55974
+Destination port: 443
+Sequence number: 2216595614
+Acknowledgment number: 3679719088
+Header length: 32
+Window: 2060
+Flags: ['ACK']
+Checksum: 55619
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°196===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  96911
+Included length:  843
+Original length:  843
+======Packet Data packet n°196======
+Packet data length:  843
+Packet data preview (32 bytes):  540df95027ff42ab8313b05408004502033d0000400040066035c0a8016a146f
+======Parsing Ethernet packet n°196======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°196======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 829
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 20.111.1.3
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°196======
+Source port: 55974
+Destination port: 443
+Sequence number: 2216595614
+Acknowledgment number: 3679719088
+Header length: 32
+Window: 2060
+Flags: ['PSH', 'ACK']
+Checksum: 17073
+Urgent pointer: 0
+Options length: 12
+Payload length: 777
+Payload preview: 14030300010116030302fe010002fa0303a0bdd693fd1bfeeb695792b22efe21
+
+===================Parsing Packet n°197===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  122366
+Included length:  66
+Original length:  66
+======Packet Data packet n°197======
+Packet data length:  66
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000034000040003c066740146f0103c0a8
+======Parsing Ethernet packet n°197======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°197======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 20.111.1.3
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°197======
+Source port: 443
+Destination port: 55974
+Sequence number: 3679719088
+Acknowledgment number: 2216596391
+Header length: 32
+Window: 49
+Flags: ['ACK']
+Checksum: 56820
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°198===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  136534
+Included length:  1454
+Original length:  1454
+======Packet Data packet n°198======
+Packet data length:  1454
+Packet data preview (32 bytes):  42ab8313b054540df95027ff0800450005a0000040003c0661d4146f0103c0a8
+======Parsing Ethernet packet n°198======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°198======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 1440
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 20.111.1.3
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°198======
+Source port: 443
+Destination port: 55974
+Sequence number: 3679719088
+Acknowledgment number: 2216596391
+Header length: 32
+Window: 49
+Flags: ['PSH', 'ACK']
+Checksum: 58242
+Urgent pointer: 0
+Options length: 12
+Payload length: 1388
+Payload preview: 16030300bb020000b703035e774e6d9bfe12bd20c5e07956846281bbd58abf57
+
+===================Parsing Packet n°199===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  136537
+Included length:  1454
+Original length:  1454
+======Packet Data packet n°199======
+Packet data length:  1454
+Packet data preview (32 bytes):  42ab8313b054540df95027ff0800450005a0000040003c0661d4146f0103c0a8
+======Parsing Ethernet packet n°199======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°199======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 1440
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 20.111.1.3
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°199======
+Source port: 443
+Destination port: 55974
+Sequence number: 3679720476
+Acknowledgment number: 2216596391
+Header length: 32
+Window: 49
+Flags: ['ACK']
+Checksum: 39386
+Urgent pointer: 0
+Options length: 12
+Payload length: 1388
+Payload preview: 86b7f02c235e0e6f8f21f5a8a1a3bd9e7060beaa7b67b06b012f9461234f6ad5
+
+===================Parsing Packet n°200===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  136747
+Included length:  66
+Original length:  66
+======Packet Data packet n°200======
+Packet data length:  66
+Packet data preview (32 bytes):  540df95027ff42ab8313b0540800450000340000400040066340c0a8016a146f
+======Parsing Ethernet packet n°200======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°200======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 20.111.1.3
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°200======
+Source port: 55974
+Destination port: 443
+Sequence number: 2216596391
+Acknowledgment number: 3679721864
+Header length: 32
+Window: 2017
+Flags: ['ACK']
+Checksum: 52022
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°201===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  136934
+Included length:  1454
+Original length:  1454
+======Packet Data packet n°201======
+Packet data length:  1454
+Packet data preview (32 bytes):  42ab8313b054540df95027ff0800450005a0000040003c0661d4146f0103c0a8
+======Parsing Ethernet packet n°201======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°201======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 1440
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 20.111.1.3
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°201======
+Source port: 443
+Destination port: 55974
+Sequence number: 3679721864
+Acknowledgment number: 2216596391
+Header length: 32
+Window: 49
+Flags: ['ACK']
+Checksum: 17871
+Urgent pointer: 0
+Options length: 12
+Payload length: 1388
+Payload preview: eddf98fa7209512a427318dac20ba502c405709af46d78bc7154ae832cb19de3
+
+===================Parsing Packet n°202===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  136938
+Included length:  1454
+Original length:  1454
+======Packet Data packet n°202======
+Packet data length:  1454
+Packet data preview (32 bytes):  42ab8313b054540df95027ff0800450005a0000040003c0661d4146f0103c0a8
+======Parsing Ethernet packet n°202======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°202======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 1440
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 20.111.1.3
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°202======
+Source port: 443
+Destination port: 55974
+Sequence number: 3679723252
+Acknowledgment number: 2216596391
+Header length: 32
+Window: 49
+Flags: ['ACK']
+Checksum: 13149
+Urgent pointer: 0
+Options length: 12
+Payload length: 1388
+Payload preview: 12bb46312ec1ecad9a1e117101a4f440aac20d952cdcd287c652e75e59840b52
+
+===================Parsing Packet n°203===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  137039
+Included length:  66
+Original length:  66
+======Packet Data packet n°203======
+Packet data length:  66
+Packet data preview (32 bytes):  540df95027ff42ab8313b0540800450000340000400040066340c0a8016a146f
+======Parsing Ethernet packet n°203======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°203======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 20.111.1.3
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°203======
+Source port: 55974
+Destination port: 443
+Sequence number: 2216596391
+Acknowledgment number: 3679724640
+Header length: 32
+Window: 2005
+Flags: ['ACK']
+Checksum: 49258
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°204===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  144090
+Included length:  1454
+Original length:  1454
+======Packet Data packet n°204======
+Packet data length:  1454
+Packet data preview (32 bytes):  42ab8313b054540df95027ff0800450005a0000040003c0661d4146f0103c0a8
+======Parsing Ethernet packet n°204======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°204======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 1440
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 20.111.1.3
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°204======
+Source port: 443
+Destination port: 55974
+Sequence number: 3679724640
+Acknowledgment number: 2216596391
+Header length: 32
+Window: 49
+Flags: ['ACK']
+Checksum: 46861
+Urgent pointer: 0
+Options length: 12
+Payload length: 1388
+Payload preview: 6756ca4ee143f0f94389f42a2a21041b49ee565ffff79c3d5f84660e16e6bcb9
+
+===================Parsing Packet n°205===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  144094
+Included length:  1339
+Original length:  1339
+======Packet Data packet n°205======
+Packet data length:  1339
+Packet data preview (32 bytes):  42ab8313b054540df95027ff08004500052d000040003c066247146f0103c0a8
+======Parsing Ethernet packet n°205======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°205======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 1325
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 20.111.1.3
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°205======
+Source port: 443
+Destination port: 55974
+Sequence number: 3679726028
+Acknowledgment number: 2216596391
+Header length: 32
+Window: 49
+Flags: ['PSH', 'ACK']
+Checksum: 12622
+Urgent pointer: 0
+Options length: 12
+Payload length: 1273
+Payload preview: 487eb0855831503002309d7c0de8bffcea5b00ab5aeb970670e9572845352090
+
+===================Parsing Packet n°206===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  144282
+Included length:  66
+Original length:  66
+======Packet Data packet n°206======
+Packet data length:  66
+Packet data preview (32 bytes):  540df95027ff42ab8313b0540800450000340000400040066340c0a8016a146f
+======Parsing Ethernet packet n°206======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°206======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 20.111.1.3
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°206======
+Source port: 55974
+Destination port: 443
+Sequence number: 2216596391
+Acknowledgment number: 3679727301
+Header length: 32
+Window: 2007
+Flags: ['ACK']
+Checksum: 46588
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°207===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  169560
+Included length:  140
+Original length:  140
+======Packet Data packet n°207======
+Packet data length:  140
+Packet data preview (32 bytes):  540df95027ff42ab8313b05408004502007e00004000400662f4c0a8016a146f
+======Parsing Ethernet packet n°207======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°207======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 126
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 20.111.1.3
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°207======
+Source port: 55974
+Destination port: 443
+Sequence number: 2216596391
+Acknowledgment number: 3679727301
+Header length: 32
+Window: 2048
+Flags: ['PSH', 'ACK']
+Checksum: 21231
+Urgent pointer: 0
+Options length: 12
+Payload length: 74
+Payload preview: 170303004502c22491c3bdc8724d055c53acb5cfbad60fd21d1b2cbb29150474
+
+===================Parsing Packet n°208===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  169810
+Included length:  905
+Original length:  905
+======Packet Data packet n°208======
+Packet data length:  905
+Packet data preview (32 bytes):  540df95027ff42ab8313b05408004502037b0000400040065ff7c0a8016a146f
+======Parsing Ethernet packet n°208======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°208======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 891
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 20.111.1.3
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°208======
+Source port: 55974
+Destination port: 443
+Sequence number: 2216596465
+Acknowledgment number: 3679727301
+Header length: 32
+Window: 2048
+Flags: ['PSH', 'ACK']
+Checksum: 57262
+Urgent pointer: 0
+Options length: 12
+Payload length: 839
+Payload preview: 1703030342dfdd5bc4960f4447ac910fd5924d510db7ce2e08c694c2330761c0
+
+===================Parsing Packet n°209===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  189440
+Included length:  66
+Original length:  66
+======Packet Data packet n°209======
+Packet data length:  66
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000034000040003c066740146f0103c0a8
+======Parsing Ethernet packet n°209======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°209======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 20.111.1.3
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°209======
+Source port: 443
+Destination port: 55974
+Sequence number: 3679727301
+Acknowledgment number: 2216596465
+Header length: 32
+Window: 49
+Flags: ['ACK']
+Checksum: 48394
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°210===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  197307
+Included length:  66
+Original length:  66
+======Packet Data packet n°210======
+Packet data length:  66
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000034000040003c066740146f0103c0a8
+======Parsing Ethernet packet n°210======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°210======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 20.111.1.3
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°210======
+Source port: 443
+Destination port: 55974
+Sequence number: 3679727301
+Acknowledgment number: 2216597304
+Header length: 32
+Window: 50
+Flags: ['ACK']
+Checksum: 47545
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°211===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  203950
+Included length:  169
+Original length:  169
+======Packet Data packet n°211======
+Packet data length:  169
+Packet data preview (32 bytes):  42ab8313b054540df95027ff08004500009b000040003c0666d9146f0103c0a8
+======Parsing Ethernet packet n°211======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°211======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 155
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 20.111.1.3
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°211======
+Source port: 443
+Destination port: 55974
+Sequence number: 3679727301
+Acknowledgment number: 2216597304
+Header length: 32
+Window: 50
+Flags: ['PSH', 'ACK']
+Checksum: 44831
+Urgent pointer: 0
+Options length: 12
+Payload length: 103
+Payload preview: 1703030062303786582e9a1d807efc6cf90370764660db89624a4875462d802a
+
+===================Parsing Packet n°212===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  204049
+Included length:  66
+Original length:  66
+======Packet Data packet n°212======
+Packet data length:  66
+Packet data preview (32 bytes):  540df95027ff42ab8313b0540800450000340000400040066340c0a8016a146f
+======Parsing Ethernet packet n°212======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°212======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 20.111.1.3
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°212======
+Source port: 55974
+Destination port: 443
+Sequence number: 2216597304
+Acknowledgment number: 3679727404
+Header length: 32
+Window: 2047
+Flags: ['ACK']
+Checksum: 45408
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°213===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  224010
+Included length:  463
+Original length:  463
+======Packet Data packet n°213======
+Packet data length:  463
+Packet data preview (32 bytes):  42ab8313b054540df95027ff0800450001c1000040003c0665b3146f0103c0a8
+======Parsing Ethernet packet n°213======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°213======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 449
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 20.111.1.3
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°213======
+Source port: 443
+Destination port: 55974
+Sequence number: 3679727404
+Acknowledgment number: 2216597304
+Header length: 32
+Window: 50
+Flags: ['PSH', 'ACK']
+Checksum: 53734
+Urgent pointer: 0
+Options length: 12
+Payload length: 397
+Payload preview: 1703030188b1145dd460bd485da10913b737b62f2fcf1fbb87302b9c8d5e28aa
+
+===================Parsing Packet n°214===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  224148
+Included length:  66
+Original length:  66
+======Packet Data packet n°214======
+Packet data length:  66
+Packet data preview (32 bytes):  540df95027ff42ab8313b0540800450000340000400040066340c0a8016a146f
+======Parsing Ethernet packet n°214======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°214======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 20.111.1.3
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°214======
+Source port: 55974
+Destination port: 443
+Sequence number: 2216597304
+Acknowledgment number: 3679727801
+Header length: 32
+Window: 2042
+Flags: ['ACK']
+Checksum: 44975
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°215===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  260384
+Included length:  110
+Original length:  110
+======Packet Data packet n°215======
+Packet data length:  110
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd60240600003806402a04cec200056581a169
+======Parsing Ethernet packet n°215======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°216===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  261011
+Included length:  86
+Original length:  86
+======Packet Data packet n°216======
+Packet data length:  86
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd60040600002006402a04cec200056581a169
+======Parsing Ethernet packet n°216======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°217===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  283582
+Included length:  110
+Original length:  110
+======Packet Data packet n°217======
+Packet data length:  110
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd601bf24c003806352a0226f040000b920000
+======Parsing Ethernet packet n°217======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°218===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  283584
+Included length:  86
+Original length:  86
+======Packet Data packet n°218======
+Packet data length:  86
+Packet data preview (32 bytes):  42ab8313b054540df95027ff86dd600bf24c002006352a0226f040000b920000
+======Parsing Ethernet packet n°218======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°219===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  283752
+Included length:  74
+Original length:  74
+======Packet Data packet n°219======
+Packet data length:  74
+Packet data preview (32 bytes):  540df95027ff42ab8313b05486dd601bf24c001406402a04cec200056581a169
+======Parsing Ethernet packet n°219======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x86DD - IPv6
+
+===================Parsing Packet n°220===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  420509
+Included length:  66
+Original length:  66
+======Packet Data packet n°220======
+Packet data length:  66
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000034000040003c063bf011ab2f17c0a8
+======Parsing Ethernet packet n°220======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°220======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 17.171.47.23
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°220======
+Source port: 443
+Destination port: 55971
+Sequence number: 1317511161
+Acknowledgment number: 4063188444
+Header length: 32
+Window: 51
+Flags: ['FIN', 'ACK']
+Checksum: 5205
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°221===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  420725
+Included length:  78
+Original length:  78
+======Packet Data packet n°221======
+Packet data length:  78
+Packet data preview (32 bytes):  540df95027ff42ab8313b05408004500004000004000400637e4c0a8016a11ab
+======Parsing Ethernet packet n°221======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°221======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 64
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 17.171.47.23
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°221======
+Source port: 55971
+Destination port: 443
+Sequence number: 4063188444
+Acknowledgment number: 1317511137
+Header length: 44
+Window: 2048
+Flags: ['ACK']
+Checksum: 63887
+Urgent pointer: 0
+Options length: 24
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°222===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  423897
+Included length:  90
+Original length:  90
+======Packet Data packet n°222======
+Packet data length:  90
+Packet data preview (32 bytes):  42ab8313b054540df95027ff08004500004c000040003c063bd811ab2f17c0a8
+======Parsing Ethernet packet n°222======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°222======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 76
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 17.171.47.23
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°222======
+Source port: 443
+Destination port: 55971
+Sequence number: 1317511137
+Acknowledgment number: 4063188444
+Header length: 32
+Window: 51
+Flags: ['PSH', 'ACK']
+Checksum: 32140
+Urgent pointer: 0
+Options length: 12
+Payload length: 24
+Payload preview: 1703030013b6bb7f0a970beb62278165bd39948b3fdf21d5
+
+===================Parsing Packet n°223===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  424066
+Included length:  66
+Original length:  66
+======Packet Data packet n°223======
+Packet data length:  66
+Packet data preview (32 bytes):  540df95027ff42ab8313b05408004500003400004000400637f0c0a8016a11ab
+======Parsing Ethernet packet n°223======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°223======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 17.171.47.23
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°223======
+Source port: 55971
+Destination port: 443
+Sequence number: 4063188444
+Acknowledgment number: 1317511162
+Header length: 32
+Window: 2048
+Flags: ['ACK']
+Checksum: 38803
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°224===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  424703
+Included length:  90
+Original length:  90
+======Packet Data packet n°224======
+Packet data length:  90
+Packet data preview (32 bytes):  540df95027ff42ab8313b05408004502004c00004000400637d6c0a8016a11ab
+======Parsing Ethernet packet n°224======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°224======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 76
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 17.171.47.23
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°224======
+Source port: 55971
+Destination port: 443
+Sequence number: 4063188444
+Acknowledgment number: 1317511162
+Header length: 32
+Window: 2048
+Flags: ['PSH', 'ACK']
+Checksum: 44249
+Urgent pointer: 0
+Options length: 12
+Payload length: 24
+Payload preview: 17030300138cbd99ca535de77d639d43621dbe49446457c2
+
+===================Parsing Packet n°225===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  425486
+Included length:  66
+Original length:  66
+======Packet Data packet n°225======
+Packet data length:  66
+Packet data preview (32 bytes):  540df95027ff42ab8313b05408004500003400004000400637f0c0a8016a11ab
+======Parsing Ethernet packet n°225======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°225======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 17.171.47.23
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°225======
+Source port: 55971
+Destination port: 443
+Sequence number: 4063188468
+Acknowledgment number: 1317511162
+Header length: 32
+Window: 2048
+Flags: ['FIN', 'ACK']
+Checksum: 38776
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°226===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  445039
+Included length:  90
+Original length:  90
+======Packet Data packet n°226======
+Packet data length:  90
+Packet data preview (32 bytes):  42ab8313b054540df95027ff08004500004c000040003c063bd811ab2f17c0a8
+======Parsing Ethernet packet n°226======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°226======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 76
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 17.171.47.23
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°226======
+Source port: 443
+Destination port: 55971
+Sequence number: 1317511137
+Acknowledgment number: 4063188444
+Header length: 32
+Window: 51
+Flags: ['FIN', 'PSH', 'ACK']
+Checksum: 2055
+Urgent pointer: 0
+Options length: 12
+Payload length: 24
+Payload preview: 1703030013b6bb7f0a970beb62278165bd39948b3fdf21d5
+
+===================Parsing Packet n°227===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  445222
+Included length:  78
+Original length:  78
+======Packet Data packet n°227======
+Packet data length:  78
+Packet data preview (32 bytes):  540df95027ff42ab8313b05408004500004000004000400637e4c0a8016a11ab
+======Parsing Ethernet packet n°227======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°227======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 64
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 17.171.47.23
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°227======
+Source port: 55971
+Destination port: 443
+Sequence number: 4063188468
+Acknowledgment number: 1317511162
+Header length: 44
+Window: 2048
+Flags: ['FIN', 'ACK']
+Checksum: 33892
+Urgent pointer: 0
+Options length: 24
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°228===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  445409
+Included length:  66
+Original length:  66
+======Packet Data packet n°228======
+Packet data length:  66
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000034000040003c063bf011ab2f17c0a8
+======Parsing Ethernet packet n°228======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°228======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 17.171.47.23
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°228======
+Source port: 443
+Destination port: 55971
+Sequence number: 1317511162
+Acknowledgment number: 4063188444
+Header length: 32
+Window: 51
+Flags: ['ACK']
+Checksum: 40775
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°229===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  449370
+Included length:  66
+Original length:  66
+======Packet Data packet n°229======
+Packet data length:  66
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000034000040003c063bf011ab2f17c0a8
+======Parsing Ethernet packet n°229======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°229======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 17.171.47.23
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°229======
+Source port: 443
+Destination port: 55971
+Sequence number: 1317511162
+Acknowledgment number: 4063188469
+Header length: 32
+Window: 51
+Flags: ['ACK']
+Checksum: 40744
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°230===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  464302
+Included length:  66
+Original length:  66
+======Packet Data packet n°230======
+Packet data length:  66
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000034000040003c063bf011ab2f17c0a8
+======Parsing Ethernet packet n°230======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°230======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 17.171.47.23
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°230======
+Source port: 443
+Destination port: 55971
+Sequence number: 1317511162
+Acknowledgment number: 4063188469
+Header length: 32
+Window: 51
+Flags: ['ACK']
+Checksum: 40729
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°231===================
+Timestamp seconds:  1780951028
+Timestamp microseconds:  464401
+Included length:  54
+Original length:  54
+======Packet Data packet n°231======
+Packet data length:  54
+Packet data preview (32 bytes):  540df95027ff42ab8313b05408004500002800004000400637fcc0a8016a11ab
+======Parsing Ethernet packet n°231======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°231======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 40
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 17.171.47.23
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°231======
+Source port: 55971
+Destination port: 443
+Sequence number: 4063188469
+Acknowledgment number: 0
+Header length: 20
+Window: 0
+Flags: ['RST']
+Checksum: 34952
+Urgent pointer: 0
+Options length: 0
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°232===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  324614
+Included length:  92
+Original length:  92
+======Packet Data packet n°232======
+Packet data length:  92
+Packet data preview (32 bytes):  540df95027ff42ab8313b05408004500004e2996000040118cf5c0a8016a0101
+======Parsing Ethernet packet n°232======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°232======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 78
+TTL: 64
+Protocol: 17 - UDP
+Source IP: 192.168.1.106
+Destination IP: 1.1.1.1
+Flags: 0
+Fragment offset: 0
+
+======Parsing UDP packet n°232======
+Source port: 3315
+Destination port: 53
+Length: 58
+Checksum: 54561
+Payload preview: 193401000001000000000000066d6f62696c65066576656e7473046461746109
+
+===================Parsing Packet n°233===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  324973
+Included length:  92
+Original length:  92
+======Packet Data packet n°233======
+Packet data length:  92
+Packet data preview (32 bytes):  540df95027ff42ab8313b05408004500004e5204000040116487c0a8016a0101
+======Parsing Ethernet packet n°233======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°233======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 78
+TTL: 64
+Protocol: 17 - UDP
+Source IP: 192.168.1.106
+Destination IP: 1.1.1.1
+Flags: 0
+Fragment offset: 0
+
+======Parsing UDP packet n°233======
+Source port: 50648
+Destination port: 53
+Length: 58
+Checksum: 8699
+Payload preview: 139a01000001000000000000066d6f62696c65066576656e7473046461746109
+
+===================Parsing Packet n°234===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  325165
+Included length:  92
+Original length:  92
+======Packet Data packet n°234======
+Packet data length:  92
+Packet data preview (32 bytes):  540df95027ff42ab8313b05408004500004eb305000040110386c0a8016a0101
+======Parsing Ethernet packet n°234======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°234======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 78
+TTL: 64
+Protocol: 17 - UDP
+Source IP: 192.168.1.106
+Destination IP: 1.1.1.1
+Flags: 0
+Fragment offset: 0
+
+======Parsing UDP packet n°234======
+Source port: 17518
+Destination port: 53
+Length: 58
+Checksum: 2537
+Payload preview: ad3101000001000000000000066d6f62696c65066576656e7473046461746109
+
+===================Parsing Packet n°235===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  351746
+Included length:  260
+Original length:  260
+======Packet Data packet n°235======
+Packet data length:  260
+Packet data preview (32 bytes):  42ab8313b054540df95027ff0800450000f600004000331182e301010101c0a8
+======Parsing Ethernet packet n°235======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°235======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 246
+TTL: 51
+Protocol: 17 - UDP
+Source IP: 1.1.1.1
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing UDP packet n°235======
+Source port: 53
+Destination port: 3315
+Length: 226
+Checksum: 45032
+Payload preview: 193481800001000200010000066d6f62696c65066576656e7473046461746109
+
+===================Parsing Packet n°236===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  351750
+Included length:  213
+Original length:  213
+======Packet Data packet n°236======
+Packet data length:  213
+Packet data preview (32 bytes):  42ab8313b054540df95027ff0800450000c7000040003311831201010101c0a8
+======Parsing Ethernet packet n°236======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°236======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 199
+TTL: 51
+Protocol: 17 - UDP
+Source IP: 1.1.1.1
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing UDP packet n°236======
+Source port: 53
+Destination port: 17518
+Length: 179
+Checksum: 8004
+Payload preview: ad3181800001000300000000066d6f62696c65066576656e7473046461746109
+
+===================Parsing Packet n°237===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  354718
+Included length:  260
+Original length:  260
+======Packet Data packet n°237======
+Packet data length:  260
+Packet data preview (32 bytes):  42ab8313b054540df95027ff0800450000f600004000331182e301010101c0a8
+======Parsing Ethernet packet n°237======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°237======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 246
+TTL: 51
+Protocol: 17 - UDP
+Source IP: 1.1.1.1
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing UDP packet n°237======
+Source port: 53
+Destination port: 50648
+Length: 226
+Checksum: 1220
+Payload preview: 139a81800001000200010000066d6f62696c65066576656e7473046461746109
+
+===================Parsing Packet n°238===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  355960
+Included length:  78
+Original length:  78
+======Packet Data packet n°238======
+Packet data length:  78
+Packet data preview (32 bytes):  540df95027ff42ab8313b0540800450000400000400040063542c0a8016a3368
+======Parsing Ethernet packet n°238======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°238======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 64
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 51.104.15.252
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°238======
+Source port: 55975
+Destination port: 443
+Sequence number: 2430810885
+Acknowledgment number: 0
+Header length: 44
+Window: 65535
+Flags: ['SYN']
+Checksum: 35431
+Urgent pointer: 0
+Options length: 24
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°239===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  384050
+Included length:  74
+Original length:  74
+======Packet Data packet n°239======
+Packet data length:  74
+Packet data preview (32 bytes):  42ab8313b054540df95027ff08004500003c000040003c06394633680ffcc0a8
+======Parsing Ethernet packet n°239======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°239======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 60
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 51.104.15.252
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°239======
+Source port: 443
+Destination port: 55975
+Sequence number: 2372559299
+Acknowledgment number: 2430810886
+Header length: 40
+Window: 22400
+Flags: ['SYN', 'ACK']
+Checksum: 37383
+Urgent pointer: 0
+Options length: 20
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°240===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  384328
+Included length:  66
+Original length:  66
+======Packet Data packet n°240======
+Packet data length:  66
+Packet data preview (32 bytes):  540df95027ff42ab8313b054080045000034000040004006354ec0a8016a3368
+======Parsing Ethernet packet n°240======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°240======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 51.104.15.252
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°240======
+Source port: 55975
+Destination port: 443
+Sequence number: 2430810886
+Acknowledgment number: 2372559300
+Header length: 32
+Window: 2061
+Flags: ['ACK']
+Checksum: 4145
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°241===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  385360
+Included length:  1454
+Original length:  1454
+======Packet Data packet n°241======
+Packet data length:  1454
+Packet data preview (32 bytes):  540df95027ff42ab8313b0540800450205a00000400040062fe0c0a8016a3368
+======Parsing Ethernet packet n°241======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°241======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 1440
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 51.104.15.252
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°241======
+Source port: 55975
+Destination port: 443
+Sequence number: 2430810886
+Acknowledgment number: 2372559300
+Header length: 32
+Window: 2061
+Flags: ['ACK']
+Checksum: 34919
+Urgent pointer: 0
+Options length: 12
+Payload length: 1388
+Payload preview: 1603010768010007640303453a9e84b6db10ff1e3ae732efe3842e60a170f07c
+
+===================Parsing Packet n°242===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  385393
+Included length:  579
+Original length:  579
+======Packet Data packet n°242======
+Packet data length:  579
+Packet data preview (32 bytes):  540df95027ff42ab8313b054080045020235000040004006334bc0a8016a3368
+======Parsing Ethernet packet n°242======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°242======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 565
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 51.104.15.252
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°242======
+Source port: 55975
+Destination port: 443
+Sequence number: 2430812274
+Acknowledgment number: 2372559300
+Header length: 32
+Window: 2061
+Flags: ['PSH', 'ACK']
+Checksum: 8372
+Urgent pointer: 0
+Options length: 12
+Payload length: 513
+Payload preview: 1c303b81216ce6aa56b85afff59075b4241427172675c52086fc22ad51e6dd7d
+
+===================Parsing Packet n°243===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  412632
+Included length:  66
+Original length:  66
+======Packet Data packet n°243======
+Packet data length:  66
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000034000040003c06394e33680ffcc0a8
+======Parsing Ethernet packet n°243======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°243======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 51.104.15.252
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°243======
+Source port: 443
+Destination port: 55975
+Sequence number: 2372559300
+Acknowledgment number: 2430812787
+Header length: 32
+Window: 47
+Flags: ['ACK']
+Checksum: 4218
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°244===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  444129
+Included length:  165
+Original length:  165
+======Packet Data packet n°244======
+Packet data length:  165
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000097000040003c0638eb33680ffcc0a8
+======Parsing Ethernet packet n°244======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°244======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 151
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 51.104.15.252
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°244======
+Source port: 443
+Destination port: 55975
+Sequence number: 2372559300
+Acknowledgment number: 2430812787
+Header length: 32
+Window: 47
+Flags: ['PSH', 'ACK']
+Checksum: 37612
+Urgent pointer: 0
+Options length: 12
+Payload length: 99
+Payload preview: 1603030058020000540303cf21ad74e59a6111be1d8c021e65b891c2a211167a
+
+===================Parsing Packet n°245===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  444315
+Included length:  66
+Original length:  66
+======Packet Data packet n°245======
+Packet data length:  66
+Packet data preview (32 bytes):  540df95027ff42ab8313b054080045000034000040004006354ec0a8016a3368
+======Parsing Ethernet packet n°245======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°245======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 51.104.15.252
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°245======
+Source port: 55975
+Destination port: 443
+Sequence number: 2430812787
+Acknowledgment number: 2372559399
+Header length: 32
+Window: 2060
+Flags: ['ACK']
+Checksum: 2019
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°246===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  446690
+Included length:  813
+Original length:  813
+======Packet Data packet n°246======
+Packet data length:  813
+Packet data preview (32 bytes):  540df95027ff42ab8313b05408004502031f0000400040063261c0a8016a3368
+======Parsing Ethernet packet n°246======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°246======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 799
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 51.104.15.252
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°246======
+Source port: 55975
+Destination port: 443
+Sequence number: 2430812787
+Acknowledgment number: 2372559399
+Header length: 32
+Window: 2060
+Flags: ['PSH', 'ACK']
+Checksum: 15969
+Urgent pointer: 0
+Options length: 12
+Payload length: 747
+Payload preview: 14030300010116030302e0010002dc0303453a9e84b6db10ff1e3ae732efe384
+
+===================Parsing Packet n°247===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  472418
+Included length:  66
+Original length:  66
+======Packet Data packet n°247======
+Packet data length:  66
+Packet data preview (32 bytes):  42ab8313b054540df95027ff080045000034000040003c06394e33680ffcc0a8
+======Parsing Ethernet packet n°247======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°247======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 51.104.15.252
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°247======
+Source port: 443
+Destination port: 55975
+Sequence number: 2372559399
+Acknowledgment number: 2430813534
+Header length: 32
+Window: 48
+Flags: ['ACK']
+Checksum: 3250
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°248===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  492596
+Included length:  1454
+Original length:  1454
+======Packet Data packet n°248======
+Packet data length:  1454
+Packet data preview (32 bytes):  42ab8313b054540df95027ff0800450005a0000040003c0633e233680ffcc0a8
+======Parsing Ethernet packet n°248======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°248======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 1440
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 51.104.15.252
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°248======
+Source port: 443
+Destination port: 55975
+Sequence number: 2372559399
+Acknowledgment number: 2430813534
+Header length: 32
+Window: 48
+Flags: ['PSH', 'ACK']
+Checksum: 50541
+Urgent pointer: 0
+Options length: 12
+Payload length: 1388
+Payload preview: 16030300bb020000b70303dcdadd3c370e80a8aceaee50961e6e84a141cb36ab
+
+===================Parsing Packet n°249===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  492599
+Included length:  1454
+Original length:  1454
+======Packet Data packet n°249======
+Packet data length:  1454
+Packet data preview (32 bytes):  42ab8313b054540df95027ff0800450005a0000040003c0633e233680ffcc0a8
+======Parsing Ethernet packet n°249======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°249======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 1440
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 51.104.15.252
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°249======
+Source port: 443
+Destination port: 55975
+Sequence number: 2372560787
+Acknowledgment number: 2430813534
+Header length: 32
+Window: 48
+Flags: ['ACK']
+Checksum: 13991
+Urgent pointer: 0
+Options length: 12
+Payload length: 1388
+Payload preview: 401d8b864de1bc1de08c0e6d17cb198219ed37c96098772b2eb3b3809937d2d5
+
+===================Parsing Packet n°250===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  492747
+Included length:  66
+Original length:  66
+======Packet Data packet n°250======
+Packet data length:  66
+Packet data preview (32 bytes):  540df95027ff42ab8313b054080045000034000040004006354ec0a8016a3368
+======Parsing Ethernet packet n°250======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°250======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 51.104.15.252
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°250======
+Source port: 55975
+Destination port: 443
+Sequence number: 2430813534
+Acknowledgment number: 2372562175
+Header length: 32
+Window: 2017
+Flags: ['ACK']
+Checksum: 63975
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°251===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  493312
+Included length:  1454
+Original length:  1454
+======Packet Data packet n°251======
+Packet data length:  1454
+Packet data preview (32 bytes):  42ab8313b054540df95027ff0800450005a0000040003c0633e233680ffcc0a8
+======Parsing Ethernet packet n°251======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°251======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 1440
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 51.104.15.252
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°251======
+Source port: 443
+Destination port: 55975
+Sequence number: 2372562175
+Acknowledgment number: 2430813534
+Header length: 32
+Window: 48
+Flags: ['ACK']
+Checksum: 10577
+Urgent pointer: 0
+Options length: 12
+Payload length: 1388
+Payload preview: c142caaad985b32132c6dfa2ab614fbc978c94b9260bc03407dab6753d6dc791
+
+===================Parsing Packet n°252===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  493315
+Included length:  1454
+Original length:  1454
+======Packet Data packet n°252======
+Packet data length:  1454
+Packet data preview (32 bytes):  42ab8313b054540df95027ff0800450005a0000040003c0633e233680ffcc0a8
+======Parsing Ethernet packet n°252======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°252======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 1440
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 51.104.15.252
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°252======
+Source port: 443
+Destination port: 55975
+Sequence number: 2372563563
+Acknowledgment number: 2430813534
+Header length: 32
+Window: 48
+Flags: ['ACK']
+Checksum: 17499
+Urgent pointer: 0
+Options length: 12
+Payload length: 1388
+Payload preview: 7f7cd346a4c6df621bb666f5ebd9f30d55fee7400342002bcacffa661086b208
+
+===================Parsing Packet n°253===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  493398
+Included length:  66
+Original length:  66
+======Packet Data packet n°253======
+Packet data length:  66
+Packet data preview (32 bytes):  540df95027ff42ab8313b054080045000034000040004006354ec0a8016a3368
+======Parsing Ethernet packet n°253======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°253======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 51.104.15.252
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°253======
+Source port: 55975
+Destination port: 443
+Sequence number: 2430813534
+Acknowledgment number: 2372564951
+Header length: 32
+Window: 2005
+Flags: ['ACK']
+Checksum: 61210
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°254===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  494093
+Included length:  1454
+Original length:  1454
+======Packet Data packet n°254======
+Packet data length:  1454
+Packet data preview (32 bytes):  42ab8313b054540df95027ff0800450005a0000040003c0633e233680ffcc0a8
+======Parsing Ethernet packet n°254======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°254======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 1440
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 51.104.15.252
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°254======
+Source port: 443
+Destination port: 55975
+Sequence number: 2372564951
+Acknowledgment number: 2430813534
+Header length: 32
+Window: 48
+Flags: ['ACK']
+Checksum: 42314
+Urgent pointer: 0
+Options length: 12
+Payload length: 1388
+Payload preview: 9c836bc2dc313e7fd3264abb7d297602afc73a9ce539ae3ad4b4273066654348
+
+===================Parsing Packet n°255===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  494095
+Included length:  1454
+Original length:  1454
+======Packet Data packet n°255======
+Packet data length:  1454
+Packet data preview (32 bytes):  42ab8313b054540df95027ff0800450005a0000040003c0633e233680ffcc0a8
+======Parsing Ethernet packet n°255======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°255======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 1440
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 51.104.15.252
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°255======
+Source port: 443
+Destination port: 55975
+Sequence number: 2372566339
+Acknowledgment number: 2430813534
+Header length: 32
+Window: 48
+Flags: ['ACK']
+Checksum: 14739
+Urgent pointer: 0
+Options length: 12
+Payload length: 1388
+Payload preview: ed690b15530a21c9e6fc111823cb37e345fee01e44ec1459cd9455662c73d05e
+
+===================Parsing Packet n°256===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  494097
+Included length:  247
+Original length:  247
+======Packet Data packet n°256======
+Packet data length:  247
+Packet data preview (32 bytes):  42ab8313b054540df95027ff0800450000e9000040003c06389933680ffcc0a8
+======Parsing Ethernet packet n°256======
+Adresse MAC de destination: 42:ab:83:13:b0:54
+Adresse MAC d'éxpédition: 54:0d:f9:50:27:ff
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°256======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 233
+TTL: 60
+Protocol: 6 - TCP
+Source IP: 51.104.15.252
+Destination IP: 192.168.1.106
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°256======
+Source port: 443
+Destination port: 55975
+Sequence number: 2372567727
+Acknowledgment number: 2430813534
+Header length: 32
+Window: 48
+Flags: ['PSH', 'ACK']
+Checksum: 13262
+Urgent pointer: 0
+Options length: 12
+Payload length: 181
+Payload preview: 5a72be12abce6ff60bf884718c9e529fec8b943ae785295f0f8f0e2e153530b9
+
+===================Parsing Packet n°257===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  494145
+Included length:  66
+Original length:  66
+======Packet Data packet n°257======
+Packet data length:  66
+Packet data preview (32 bytes):  540df95027ff42ab8313b054080045000034000040004006354ec0a8016a3368
+======Parsing Ethernet packet n°257======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°257======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 51.104.15.252
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°257======
+Source port: 55975
+Destination port: 443
+Sequence number: 2430813534
+Acknowledgment number: 2372567908
+Header length: 32
+Window: 2002
+Flags: ['ACK']
+Checksum: 58256
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°258===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  494205
+Included length:  66
+Original length:  66
+======Packet Data packet n°258======
+Packet data length:  66
+Packet data preview (32 bytes):  540df95027ff42ab8313b054080045000034000040004006354ec0a8016a3368
+======Parsing Ethernet packet n°258======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°258======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 52
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 51.104.15.252
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°258======
+Source port: 55975
+Destination port: 443
+Sequence number: 2430813534
+Acknowledgment number: 2372567908
+Header length: 32
+Window: 2048
+Flags: ['ACK']
+Checksum: 58210
+Urgent pointer: 0
+Options length: 12
+Payload length: 0
+Payload preview: 
+
+===================Parsing Packet n°259===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  497269
+Included length:  140
+Original length:  140
+======Packet Data packet n°259======
+Packet data length:  140
+Packet data preview (32 bytes):  540df95027ff42ab8313b05408004502007e0000400040063502c0a8016a3368
+======Parsing Ethernet packet n°259======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°259======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 126
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 51.104.15.252
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°259======
+Source port: 55975
+Destination port: 443
+Sequence number: 2430813534
+Acknowledgment number: 2372567908
+Header length: 32
+Window: 2048
+Flags: ['PSH', 'ACK']
+Checksum: 15694
+Urgent pointer: 0
+Options length: 12
+Payload length: 74
+Payload preview: 17030300452f89ebdc28d4a2a3a145efb39c3bb2024f72f9cbf2b22bc353bb89
+
+===================Parsing Packet n°260===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  497649
+Included length:  158
+Original length:  158
+======Packet Data packet n°260======
+Packet data length:  158
+Packet data preview (32 bytes):  540df95027ff42ab8313b05408004502009000004000400634f0c0a8016a3368
+======Parsing Ethernet packet n°260======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°260======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 144
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 51.104.15.252
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°260======
+Source port: 55975
+Destination port: 443
+Sequence number: 2430813608
+Acknowledgment number: 2372567908
+Header length: 32
+Window: 2048
+Flags: ['PSH', 'ACK']
+Checksum: 30470
+Urgent pointer: 0
+Options length: 12
+Payload length: 92
+Payload preview: 1703030057aaf93aa3c4f848af98e1466c546a0fea00f5466ba8c426e30ad3b3
+
+===================Parsing Packet n°261===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  497985
+Included length:  559
+Original length:  559
+======Packet Data packet n°261======
+Packet data length:  559
+Packet data preview (32 bytes):  540df95027ff42ab8313b054080045020221000040004006335fc0a8016a3368
+======Parsing Ethernet packet n°261======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°261======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 545
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 51.104.15.252
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°261======
+Source port: 55975
+Destination port: 443
+Sequence number: 2430813700
+Acknowledgment number: 2372567908
+Header length: 32
+Window: 2048
+Flags: ['PSH', 'ACK']
+Checksum: 37649
+Urgent pointer: 0
+Options length: 12
+Payload length: 493
+Payload preview: 17030301e81c75c28348dcd12913ff6d6641b39c476619bf5621f6f824941486
+
+===================Parsing Packet n°262===================
+Timestamp seconds:  1780951030
+Timestamp microseconds:  498042
+Included length:  1185
+Original length:  1185
+======Packet Data packet n°262======
+Packet data length:  1185
+Packet data preview (32 bytes):  540df95027ff42ab8313b05408004502049300004000400630edc0a8016a3368
+======Parsing Ethernet packet n°262======
+Adresse MAC de destination: 54:0d:f9:50:27:ff
+Adresse MAC d'éxpédition: 42:ab:83:13:b0:54
+Ethernet Type: 0x0800 - IPv4
+
+======Parsing IPv4 packet n°262======
+Version: 4
+IHL: 5
+Header length: 20
+Total length: 1171
+TTL: 64
+Protocol: 6 - TCP
+Source IP: 192.168.1.106
+Destination IP: 51.104.15.252
+Flags: 2
+Fragment offset: 0
+
+======Parsing TCP packet n°262======
+Source port: 55975
+Destination port: 443
+Sequence number: 2430814193
+Acknowledgment number: 2372567908
+Header length: 32
+Window: 2048
+Flags: ['PSH', 'ACK']
+Checksum: 12461
+Urgent pointer: 0
+Options length: 12
+Payload length: 1119
+Payload preview: 170303045a790071e7a82e3fc8eb0c887ecc7ce010d4175c4a99e87b5e765d82
+
+======Nombre totale de packets======
+Total packets: 262
+
+======Global Header Parsing======
+Magic Number hexa: d4c3b2a1
+Endianness: little
+Version: 2.4
+ThisZone: 0
+Sigfigs: 0
+Snaplen: 262144
+Network / Linktype: 1 - Ethernet II
+

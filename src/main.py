@@ -1,6 +1,7 @@
 import os
 
 #import des function pour les parser
+import icmp
 from pcap_parser import (
   parse_global_header,
   parse_packet_header,
@@ -22,6 +23,9 @@ from tcp import (
 )
 from udp import (
   parse_udp,
+)
+from icmp import (
+  parse_icmp,
 )
 
 #pathe de la ressource a analiser
@@ -70,6 +74,7 @@ with open(RESSOURCE_PATH, 'rb') as f:
     tcp = None
     flags_names = None
     udp = None
+    icmp = None
     
     if global_header["network"]  == 1: # verifie le network
       # appele la function qui parse le packet Ethernet
@@ -81,12 +86,15 @@ with open(RESSOURCE_PATH, 'rb') as f:
         if ipv4["protocol"] == 6:
           tcp = parse_tcp(ipv4["payload"])
           flags_names = get_tcp_flags_names(tcp["flags"])
-        if ipv4["protocol"] == 17:
+        elif ipv4["protocol"] == 17:
           udp = parse_udp(ipv4["payload"])
+        elif ipv4["protocol"] == 1:
+          icmp = parse_icmp(ipv4["payload"])
+      ## ARP
 
     ##################### Parsing des Packet #####################
     # print les infos du packet header
-    print(f"======Parsing Packet n°{packet_index}======")
+    print(f"===================Parsing Packet n°{packet_index}===================")
     print("Timestamp seconds: ", packet_header["ts_sec"])
     print("Timestamp microseconds: ", packet_header["ts_usec"])
     print("Included length: ", packet_header["incl_len"])
@@ -101,6 +109,7 @@ with open(RESSOURCE_PATH, 'rb') as f:
       print("Adresse MAC de destination:", ethernet["dst_mac"])
       print("Adresse MAC d'éxpédition:", ethernet["src_mac"])
       print("Ethernet Type:", ethertype_name)
+      print()
       #print le header IPv4
     if ipv4 is not None:
       print(f"======Parsing IPv4 packet n°{packet_index}======")
@@ -114,6 +123,7 @@ with open(RESSOURCE_PATH, 'rb') as f:
       print("Destination IP:", ipv4["dst_ip"])
       print("Flags:", ipv4["flags"])
       print("Fragment offset:", ipv4["fragment_offset"])
+      print()
     if tcp is not None:
       print(f"======Parsing TCP packet n°{packet_index}======")
       print("Source port:", tcp["src_port"])
@@ -136,6 +146,15 @@ with open(RESSOURCE_PATH, 'rb') as f:
       print("Length:", udp["length"])
       print("Checksum:", udp["checksum"])
       print("Payload preview:", udp["payload"][:32].hex())
+      print()
+    if icmp is not None:
+      print(f"======Parsing ICMP packet n°{packet_index}======")
+      print("Type ICMP:", icmp["type_icmp"])
+      print("Code ICMP:", icmp["code"])
+      print("Checksum ICMP:", icmp["checksum"])
+      print("Identifiant ICMP:", icmp["identifiant_icmp"])
+      print("Numéro de séquence ICMP:", icmp["sequence"])
+      print("Payload preview:", icmp["payload"][:32].hex())
       print()
     # incrémente l'index
     packet_index += 1
