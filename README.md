@@ -75,53 +75,9 @@ pcap-analyzer/
 └── README.md
 ```
 
-## Première capture de test
+IPv6 extension headers:
 
-Pour commencer, une première capture locale est réalisée avec Wireshark sur macOS.
-
-Contexte de capture :
-
-- serveur HTTP Python lancé en local ;
-- client HTTP Python lancé en local ;
-- interface Wireshark utilisée : `lo0` ;
-- trafic capturé : requête HTTP locale vers le serveur ;
-- export demandé : format PCAP classique, pas PCAPNG.
-
-Cette première capture sert surtout à comprendre :
-
-- la structure globale d’une capture ;
-- les paquets TCP ;
-- une requête HTTP ;
-- une réponse HTTP ;
-- les données applicatives visibles en bytes.
-
-Limite connue de cette première capture :
-
-- comme elle est faite sur `lo0`, elle peut ne pas utiliser le linktype Ethernet attendu pour le rendu final.
-
-Une capture complémentaire avec linktype Ethernet devra être réalisée plus tard pour valider le parsing Ethernet II, ARP, IPv4, IPv6 et les autres protocoles demandés.
-
-## Limites actuelles
-
-Le projet est en cours de développement.
-
-À ce stade :
-
-- le parseur PCAP n’est pas encore implémenté ;
-- les protocoles ne sont pas encore décodés ;
-- la capture locale HTTP sert uniquement de fichier de test initial.
-
-## Notes de développement
-
-Le développement se fera progressivement :
-
-1. Lecture du Global Header PCAP.
-2. Lecture des Packet Records.
-3. Affichage des timestamps et tailles des paquets.
-4. Parsing Ethernet II.
-5. Parsing IPv4 / IPv6 / ARP.
-6. Parsing TCP / UDP / ICMP.
-7. Parsing HTTP / DNS / QUIC.
-8. Ajout du filtre `--proto`.
-9. Dockerisation.
-10. Documentation finale avec exemples de sortie.
+- Hop-by-Hop, Routing, Destination Options: saut best effort
+- Fragment Header: saut taille fixe 8 bytes
+- ESP/AH: détectés mais non décodés complètement
+- ICMPv6: identifié via next_header 58, parsing détaillé non implémenté

@@ -1,7 +1,7 @@
 import os
 
 #import des function pour les parser
-import icmp
+import ipv6
 from pcap_parser import (
   parse_global_header,
   parse_packet_header,
@@ -27,13 +27,20 @@ from udp import (
 from icmp import (
   parse_icmp,
 )
+from arp import (
+  parse_arp,
+)
+from ipv6 import (
+  parse_ipv6,
+  get_ipv6_protocol_name,
+)
 
 #pathe de la ressource a analiser
 RESSOURCE_PATH = "captures/ethernet_capture_small.pcap"
 
 ############## Gestion et lecture des fichier source ##############
 
-#verifie si le fichier existe et si oui lie les 24 premier bytes
+#verifie si le fichier existe 
 if not os.path.isfile(RESSOURCE_PATH):
   print("fichier introuvable")
   exit(1)
@@ -67,7 +74,7 @@ with open(RESSOURCE_PATH, 'rb') as f:
     # Packet data : contenu brut du paquet
     packet_data_byte = read_exact(f, packet_header["incl_len"])
     
-    # Gestion Ethernet, IPv4, tcp, etc, en mode poupée russe
+    ######################### Gestion Ethernet, IPv4, tcp, etc, en mode poupée russe #####################
     ethernet = None # de base lecture sans ethernet si ethernet existe alors :
     ethertype_name = None #pareil pour ethertype
     ipv4 = None
@@ -75,6 +82,8 @@ with open(RESSOURCE_PATH, 'rb') as f:
     flags_names = None
     udp = None
     icmp = None
+    arp = None
+    ipv6 = None
     
     if global_header["network"]  == 1: # verifie le network
       # appele la function qui parse le packet Ethernet
@@ -82,7 +91,7 @@ with open(RESSOURCE_PATH, 'rb') as f:
       ethertype_name = get_ethertype_name(ethernet["ethertype"]) # function qui donne le nom du type prorpe
       if ethernet["ethertype"] == 0x0800: # if ethertype == ipv4
         ipv4 = parse_ipv4(ethernet["payload"])
-        protocol_name = get_ipv4_protocol_name(ipv4["protocol"])
+        protocol_name_ipv4 = get_ipv4_protocol_name(ipv4["protocol"])
         if ipv4["protocol"] == 6:
           tcp = parse_tcp(ipv4["payload"])
           flags_names = get_tcp_flags_names(tcp["flags"])
@@ -90,7 +99,11 @@ with open(RESSOURCE_PATH, 'rb') as f:
           udp = parse_udp(ipv4["payload"])
         elif ipv4["protocol"] == 1:
           icmp = parse_icmp(ipv4["payload"])
-      ## ARP
+      elif ethernet["ethertype"] == 0x0806: # if ethertype == ARP
+        arp = parse_arp(ethernet["payload"])
+      elif ethernet["ethertype"] == 0x86DD:  # if ethertype == IPV6
+        ipv6 = parse_ipv6(ethernet["payload"])
+        protocol_name_ipv6 = get_ipv6_protocol_name(ipv6["next_header"])
 
     ##################### Parsing des Packet #####################
     # print les infos du packet header
@@ -118,7 +131,7 @@ with open(RESSOURCE_PATH, 'rb') as f:
       print("Header length:", ipv4["header_length"])
       print("Total length:", ipv4["total_length"])
       print("TTL:", ipv4["ttl"])
-      print("Protocol:", protocol_name)
+      print("Protocol:", protocol_name_ipv4)
       print("Source IP:", ipv4["src_ip"])
       print("Destination IP:", ipv4["dst_ip"])
       print("Flags:", ipv4["flags"])
@@ -155,6 +168,30 @@ with open(RESSOURCE_PATH, 'rb') as f:
       print("Identifiant ICMP:", icmp["identifiant_icmp"])
       print("Numéro de séquence ICMP:", icmp["sequence"])
       print("Payload preview:", icmp["payload"][:32].hex())
+      print()
+    if arp is not None:
+      print(f"======Parsing ARP packet n°{packet_index}======")
+      print("Hardware:", arp["hardware_type"])
+      print("Protocol:", arp["protocol_type"])
+      print("Hardware Size:", arp["hardware_size"])
+      print("Protocol Size:", arp["protocol_size"])
+      print("Operation:", arp["operation"])
+      print("Sender MAC:", arp["sender_mac"])
+      print("Sender IP:", arp["sender_ip"])
+      print("Target MAC:", arp["target_mac"])
+      print("Target IP:", arp["target_ip"])
+      print()
+    if ipv6 is not None:
+      print(f"======Parsing IPV6 packet n°{packet_index}======")
+      print("Version:", ipv6["version"])
+      print("Payload length:", ipv6["payload_length"])
+      print("Next Header:", protocol_name_ipv6)
+      print("Hop limite:", ipv6["hop_limit"])
+      print("Source IP:", ipv6["src_ipv6"])
+      print("Destination IP:", ipv6["dst_ipv6"])
+      print("Final Header:", ipv6["final_next_header"])
+      print("Extensions:", ipv6["extensions_headers"])
+      print("Payload preview:", ipv6["payload"][:32].hex())
       print()
     # incrémente l'index
     packet_index += 1

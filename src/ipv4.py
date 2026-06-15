@@ -16,6 +16,7 @@ def parse_ipv4(ipv4_bytes):
   header_length = ihl * 4 # recupére le length du header
   if len(ipv4_bytes) < header_length:
     return "Packet IPv4 tronqué"
+  
   total_length_byte = ipv4_bytes[2:4]
   ttl_byte = ipv4_bytes[8] #Time To Live décremente a chaque routeur
   protocol_byte = ipv4_bytes[9]
