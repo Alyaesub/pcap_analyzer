@@ -39,6 +39,9 @@ from dns import (
   get_dns_class_name,
   get_dns_type_name,
 )
+from http import (
+  parse_http,
+)
 
 #pathe de la ressource a analiser
 RESSOURCE_PATH = "captures/ethernet_capture_small.pcap"
@@ -94,6 +97,7 @@ with open(RESSOURCE_PATH, 'rb') as f:
     question_class_name = None
     answer_type_name = None
     answer_class_name = None
+    http = None
     
     if global_header["network"]  == 1: # verifie le network
       # appele la function qui parse le packet Ethernet
@@ -105,7 +109,8 @@ with open(RESSOURCE_PATH, 'rb') as f:
         if ipv4["protocol"] == 6:
           tcp = parse_tcp(ipv4["payload"])
           flags_names = get_tcp_flags_names(tcp["flags"])
-          #parser http tcp[payload]
+          if tcp["src_port"] == 80 or tcp["dst_port"] == 80:
+            http = parse_http(tcp["payload"])
         elif ipv4["protocol"] == 17:
           udp = parse_udp(ipv4["payload"])
           if udp["src_port"] == 53 or udp["dst_port"] == 53:
@@ -114,7 +119,8 @@ with open(RESSOURCE_PATH, 'rb') as f:
             if dns["answer_type"] is not None:
               answer_type_name = get_dns_type_name(dns["answer_type"])
             question_class_name = get_dns_class_name(dns["question_class"])
-            answer_class_name = get_dns_class_name(dns["answer_class"])
+            if dns["answer_class"] is not None:
+              answer_class_name = get_dns_class_name(dns["answer_class"])
         elif ipv4["protocol"] == 1:
           icmp = parse_icmp(ipv4["payload"])
       elif ethernet["ethertype"] == 0x0806: # if ethertype == ARP
@@ -229,6 +235,19 @@ with open(RESSOURCE_PATH, 'rb') as f:
       print("Respons length:", dns["rdlength"])
       print("RDATA preview:", dns["rdata"][:32].hex())
       print("RDATA decoded:", dns["rdata_decoded"])
+      print()
+    if http is not None:
+      print(f"======Parsing HTTP packet n°{packet_index}======")
+      print("HTTP type:", http["type"])
+      print("HTTP methode:", http["method"])
+      print("Path:", http["path"])
+      print("HTTP version:", http["version"])
+      print("Statut code:", http["status_code"])
+      print("Reason:", http["reason"])
+      print("HTTP headers:", http["headers"])
+      print("Body length:", http["body_length"])
+      print("Body preview hexa:", http["body_preview_hex"])
+      print("Body preview texte:", http["body_preview_text"])
       print()
     # incrémente l'index
     packet_index += 1

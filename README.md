@@ -81,3 +81,11 @@ IPv6 extension headers:
 - Fragment Header: saut taille fixe 8 bytes
 - ESP/AH: détectés mais non décodés complètement
 - ICMPv6: identifié via next_header 58, parsing détaillé non implémenté
+
+HTTP:
+
+- parsing best effort sur trafic HTTP clair uniquement
+- HTTPS/TLS non décodé
+- pas de réassemblage TCP
+- les fragments TCP incomplets sont ignorés
+- body affiché en preview uniquement

@@ -2004,9 +2004,9 @@ Additional Record Count: 0
 Question name: main.vscode-cdn.net
 Question type: 65 - HTTPS
 Question class: IN
-Ansewer: None
+Ansewer name: None
 Answer type: None
-Answer class: Unknown (None)
+Answer class: None
 TTL: None
 Respons length: None
 RDATA preview: 
@@ -2054,9 +2054,9 @@ Additional Record Count: 0
 Question name: main.vscode-cdn.net
 Question type: 28 - AAAA
 Question class: IN
-Ansewer: None
+Ansewer name: None
 Answer type: None
-Answer class: Unknown (None)
+Answer class: None
 TTL: None
 Respons length: None
 RDATA preview: 
@@ -2104,9 +2104,9 @@ Additional Record Count: 0
 Question name: main.vscode-cdn.net
 Question type: 1 - A
 Question class: IN
-Ansewer: None
+Ansewer name: None
 Answer type: None
-Answer class: Unknown (None)
+Answer class: None
 TTL: None
 Respons length: None
 RDATA preview: 
@@ -2154,7 +2154,7 @@ Additional Record Count: 0
 Question name: main.vscode-cdn.net
 Question type: 65 - HTTPS
 Question class: IN
-Ansewer: main.vscode-cdn.net
+Ansewer name: main.vscode-cdn.net
 Answer type: 5 - CNAME
 Answer class: IN
 TTL: 3554
@@ -2204,7 +2204,7 @@ Additional Record Count: 0
 Question name: main.vscode-cdn.net
 Question type: 1 - A
 Question class: IN
-Ansewer: main.vscode-cdn.net
+Ansewer name: main.vscode-cdn.net
 Answer type: 5 - CNAME
 Answer class: IN
 TTL: 3572
@@ -2254,7 +2254,7 @@ Additional Record Count: 0
 Question name: main.vscode-cdn.net
 Question type: 28 - AAAA
 Question class: IN
-Ansewer: main.vscode-cdn.net
+Ansewer name: main.vscode-cdn.net
 Answer type: 5 - CNAME
 Answer class: IN
 TTL: 3506
@@ -5016,9 +5016,9 @@ Additional Record Count: 0
 Question name: vscode-sync.trafficmanager.net
 Question type: 65 - HTTPS
 Question class: IN
-Ansewer: None
+Ansewer name: None
 Answer type: None
-Answer class: Unknown (None)
+Answer class: None
 TTL: None
 Respons length: None
 RDATA preview: 
@@ -5066,9 +5066,9 @@ Additional Record Count: 0
 Question name: vscode-sync.trafficmanager.net
 Question type: 28 - AAAA
 Question class: IN
-Ansewer: None
+Ansewer name: None
 Answer type: None
-Answer class: Unknown (None)
+Answer class: None
 TTL: None
 Respons length: None
 RDATA preview: 
@@ -5116,9 +5116,9 @@ Additional Record Count: 0
 Question name: vscode-sync.trafficmanager.net
 Question type: 1 - A
 Question class: IN
-Ansewer: None
+Ansewer name: None
 Answer type: None
-Answer class: Unknown (None)
+Answer class: None
 TTL: None
 Respons length: None
 RDATA preview: 
@@ -5166,7 +5166,7 @@ Additional Record Count: 0
 Question name: vscode-sync.trafficmanager.net
 Question type: 28 - AAAA
 Question class: IN
-Ansewer: vscode-sync.trafficmanager.net
+Ansewer name: vscode-sync.trafficmanager.net
 Answer type: 5 - CNAME
 Answer class: IN
 TTL: 23
@@ -5216,7 +5216,7 @@ Additional Record Count: 0
 Question name: vscode-sync.trafficmanager.net
 Question type: 65 - HTTPS
 Question class: IN
-Ansewer: vscode-sync.trafficmanager.net
+Ansewer name: vscode-sync.trafficmanager.net
 Answer type: 5 - CNAME
 Answer class: IN
 TTL: 29
@@ -5266,7 +5266,7 @@ Additional Record Count: 0
 Question name: vscode-sync.trafficmanager.net
 Question type: 1 - A
 Question class: IN
-Ansewer: vscode-sync.trafficmanager.net
+Ansewer name: vscode-sync.trafficmanager.net
 Answer type: 5 - CNAME
 Answer class: IN
 TTL: 14
@@ -6957,9 +6957,9 @@ Additional Record Count: 0
 Question name: mobile.events.data.microsoft.com
 Question type: 65 - HTTPS
 Question class: IN
-Ansewer: None
+Ansewer name: None
 Answer type: None
-Answer class: Unknown (None)
+Answer class: None
 TTL: None
 Respons length: None
 RDATA preview: 
@@ -7007,9 +7007,9 @@ Additional Record Count: 0
 Question name: mobile.events.data.microsoft.com
 Question type: 28 - AAAA
 Question class: IN
-Ansewer: None
+Ansewer name: None
 Answer type: None
-Answer class: Unknown (None)
+Answer class: None
 TTL: None
 Respons length: None
 RDATA preview: 
@@ -7057,9 +7057,9 @@ Additional Record Count: 0
 Question name: mobile.events.data.microsoft.com
 Question type: 1 - A
 Question class: IN
-Ansewer: None
+Ansewer name: None
 Answer type: None
-Answer class: Unknown (None)
+Answer class: None
 TTL: None
 Respons length: None
 RDATA preview: 
@@ -7107,7 +7107,7 @@ Additional Record Count: 0
 Question name: mobile.events.data.microsoft.com
 Question type: 65 - HTTPS
 Question class: IN
-Ansewer: mobile.events.data.microsoft.com
+Ansewer name: mobile.events.data.microsoft.com
 Answer type: 5 - CNAME
 Answer class: IN
 TTL: 120
@@ -7157,7 +7157,7 @@ Additional Record Count: 0
 Question name: mobile.events.data.microsoft.com
 Question type: 1 - A
 Question class: IN
-Ansewer: mobile.events.data.microsoft.com
+Ansewer name: mobile.events.data.microsoft.com
 Answer type: 5 - CNAME
 Answer class: IN
 TTL: 118
@@ -7207,7 +7207,7 @@ Additional Record Count: 0
 Question name: mobile.events.data.microsoft.com
 Question type: 28 - AAAA
 Question class: IN
-Ansewer: mobile.events.data.microsoft.com
+Ansewer name: mobile.events.data.microsoft.com
 Answer type: 5 - CNAME
 Answer class: IN
 TTL: 116

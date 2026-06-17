@@ -64,7 +64,7 @@ def parse_dns(dns_bytes):
     
     # gestion des type des réponse
   if answer_type == 1:
-    rdata_decoded = ".".join(str(byte) for byte in rdata)
+    rdata_decoded = format_ipv4(rdata)
   elif answer_type == 28:
     rdata_decoded = format_ipv6(rdata)
   elif answer_type == 5:
