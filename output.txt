@@ -1994,6 +1994,24 @@ Length: 45
 Checksum: 51587
 Payload preview: d8ea01000001000000000000046d61696e0a7673636f64652d63646e036e6574
 
+======Parsing DNS packet n°63======
+Transaction ID: 55530
+Flags DNS: 256
+Questions count: 1
+Responses count: 0
+Name Server Count: 0
+Additional Record Count: 0
+Question name: main.vscode-cdn.net
+Question type: 65 - HTTPS
+Question class: IN
+Ansewer: None
+Answer type: None
+Answer class: Unknown (None)
+TTL: None
+Respons length: None
+RDATA preview: 
+RDATA decoded: 
+
 ===================Parsing Packet n°64===================
 Timestamp seconds:  1780951026
 Timestamp microseconds:  750488
@@ -2025,6 +2043,24 @@ Destination port: 53
 Length: 45
 Checksum: 63001
 Payload preview: b17d01000001000000000000046d61696e0a7673636f64652d63646e036e6574
+
+======Parsing DNS packet n°64======
+Transaction ID: 45437
+Flags DNS: 256
+Questions count: 1
+Responses count: 0
+Name Server Count: 0
+Additional Record Count: 0
+Question name: main.vscode-cdn.net
+Question type: 28 - AAAA
+Question class: IN
+Ansewer: None
+Answer type: None
+Answer class: Unknown (None)
+TTL: None
+Respons length: None
+RDATA preview: 
+RDATA decoded: 
 
 ===================Parsing Packet n°65===================
 Timestamp seconds:  1780951026
@@ -2058,6 +2094,24 @@ Length: 45
 Checksum: 16291
 Payload preview: 35b101000001000000000000046d61696e0a7673636f64652d63646e036e6574
 
+======Parsing DNS packet n°65======
+Transaction ID: 13745
+Flags DNS: 256
+Questions count: 1
+Responses count: 0
+Name Server Count: 0
+Additional Record Count: 0
+Question name: main.vscode-cdn.net
+Question type: 1 - A
+Question class: IN
+Ansewer: None
+Answer type: None
+Answer class: Unknown (None)
+TTL: None
+Respons length: None
+RDATA preview: 
+RDATA decoded: 
+
 ===================Parsing Packet n°66===================
 Timestamp seconds:  1780951026
 Timestamp microseconds:  774526
@@ -2089,6 +2143,24 @@ Destination port: 18686
 Length: 222
 Checksum: 20058
 Payload preview: d8ea81800001000300010000046d61696e0a7673636f64652d63646e036e6574
+
+======Parsing DNS packet n°66======
+Transaction ID: 55530
+Flags DNS: 33152
+Questions count: 1
+Responses count: 3
+Name Server Count: 1
+Additional Record Count: 0
+Question name: main.vscode-cdn.net
+Question type: 65 - HTTPS
+Question class: IN
+Ansewer: main.vscode-cdn.net
+Answer type: 5 - CNAME
+Answer class: IN
+TTL: 3554
+Respons length: 25
+RDATA preview: 0a7673636f64652d63646e037a303107617a7572656664c01c
+RDATA decoded: vscode-cdn.z01.azurefd.net
 
 ===================Parsing Packet n°67===================
 Timestamp seconds:  1780951026
@@ -2122,6 +2194,24 @@ Length: 208
 Checksum: 7422
 Payload preview: 35b181800001000600000000046d61696e0a7673636f64652d63646e036e6574
 
+======Parsing DNS packet n°67======
+Transaction ID: 13745
+Flags DNS: 33152
+Questions count: 1
+Responses count: 6
+Name Server Count: 0
+Additional Record Count: 0
+Question name: main.vscode-cdn.net
+Question type: 1 - A
+Question class: IN
+Ansewer: main.vscode-cdn.net
+Answer type: 5 - CNAME
+Answer class: IN
+TTL: 3572
+Respons length: 25
+RDATA preview: 0a7673636f64652d63646e037a303107617a7572656664c01c
+RDATA decoded: vscode-cdn.z01.azurefd.net
+
 ===================Parsing Packet n°68===================
 Timestamp seconds:  1780951026
 Timestamp microseconds:  778186
@@ -2153,6 +2243,24 @@ Destination port: 26837
 Length: 232
 Checksum: 48627
 Payload preview: b17d81800001000600000000046d61696e0a7673636f64652d63646e036e6574
+
+======Parsing DNS packet n°68======
+Transaction ID: 45437
+Flags DNS: 33152
+Questions count: 1
+Responses count: 6
+Name Server Count: 0
+Additional Record Count: 0
+Question name: main.vscode-cdn.net
+Question type: 28 - AAAA
+Question class: IN
+Ansewer: main.vscode-cdn.net
+Answer type: 5 - CNAME
+Answer class: IN
+TTL: 3506
+Respons length: 25
+RDATA preview: 0a7673636f64652d63646e037a303107617a7572656664c01c
+RDATA decoded: vscode-cdn.z01.azurefd.net
 
 ===================Parsing Packet n°69===================
 Timestamp seconds:  1780951026
@@ -4898,6 +5006,24 @@ Length: 56
 Checksum: 41686
 Payload preview: 8d87010000010000000000000b7673636f64652d73796e630e74726166666963
 
+======Parsing DNS packet n°182======
+Transaction ID: 36231
+Flags DNS: 256
+Questions count: 1
+Responses count: 0
+Name Server Count: 0
+Additional Record Count: 0
+Question name: vscode-sync.trafficmanager.net
+Question type: 65 - HTTPS
+Question class: IN
+Ansewer: None
+Answer type: None
+Answer class: Unknown (None)
+TTL: None
+Respons length: None
+RDATA preview: 
+RDATA decoded: 
+
 ===================Parsing Packet n°183===================
 Timestamp seconds:  1780951027
 Timestamp microseconds:  930629
@@ -4929,6 +5055,24 @@ Destination port: 53
 Length: 56
 Checksum: 61130
 Payload preview: ce6b010000010000000000000b7673636f64652d73796e630e74726166666963
+
+======Parsing DNS packet n°183======
+Transaction ID: 52843
+Flags DNS: 256
+Questions count: 1
+Responses count: 0
+Name Server Count: 0
+Additional Record Count: 0
+Question name: vscode-sync.trafficmanager.net
+Question type: 28 - AAAA
+Question class: IN
+Ansewer: None
+Answer type: None
+Answer class: Unknown (None)
+TTL: None
+Respons length: None
+RDATA preview: 
+RDATA decoded: 
 
 ===================Parsing Packet n°184===================
 Timestamp seconds:  1780951027
@@ -4962,6 +5106,24 @@ Length: 56
 Checksum: 32754
 Payload preview: 2685010000010000000000000b7673636f64652d73796e630e74726166666963
 
+======Parsing DNS packet n°184======
+Transaction ID: 9861
+Flags DNS: 256
+Questions count: 1
+Responses count: 0
+Name Server Count: 0
+Additional Record Count: 0
+Question name: vscode-sync.trafficmanager.net
+Question type: 1 - A
+Question class: IN
+Ansewer: None
+Answer type: None
+Answer class: Unknown (None)
+TTL: None
+Respons length: None
+RDATA preview: 
+RDATA decoded: 
+
 ===================Parsing Packet n°185===================
 Timestamp seconds:  1780951027
 Timestamp microseconds:  964077
@@ -4993,6 +5155,24 @@ Destination port: 24423
 Length: 300
 Checksum: 20366
 Payload preview: ce6b818000010003000100000b7673636f64652d73796e630e74726166666963
+
+======Parsing DNS packet n°185======
+Transaction ID: 52843
+Flags DNS: 33152
+Questions count: 1
+Responses count: 3
+Name Server Count: 1
+Additional Record Count: 0
+Question name: vscode-sync.trafficmanager.net
+Question type: 28 - AAAA
+Question class: IN
+Ansewer: vscode-sync.trafficmanager.net
+Answer type: 5 - CNAME
+Answer class: IN
+TTL: 23
+Respons length: 35
+RDATA preview: 127673636f64652d73796e632d6672632d30310d617a75726577656273697465
+RDATA decoded: vscode-sync-frc-01.azurewebsites.net
 
 ===================Parsing Packet n°186===================
 Timestamp seconds:  1780951027
@@ -5026,6 +5206,24 @@ Length: 300
 Checksum: 62860
 Payload preview: 8d87818000010003000100000b7673636f64652d73796e630e74726166666963
 
+======Parsing DNS packet n°186======
+Transaction ID: 36231
+Flags DNS: 33152
+Questions count: 1
+Responses count: 3
+Name Server Count: 1
+Additional Record Count: 0
+Question name: vscode-sync.trafficmanager.net
+Question type: 65 - HTTPS
+Question class: IN
+Ansewer: vscode-sync.trafficmanager.net
+Answer type: 5 - CNAME
+Answer class: IN
+TTL: 29
+Respons length: 35
+RDATA preview: 127673636f64652d73796e632d6672632d30310d617a75726577656273697465
+RDATA decoded: vscode-sync-frc-01.azurewebsites.net
+
 ===================Parsing Packet n°187===================
 Timestamp seconds:  1780951028
 Timestamp microseconds:  4187
@@ -5057,6 +5255,24 @@ Destination port: 30273
 Length: 246
 Checksum: 38690
 Payload preview: 2685818000010004000000000b7673636f64652d73796e630e74726166666963
+
+======Parsing DNS packet n°187======
+Transaction ID: 9861
+Flags DNS: 33152
+Questions count: 1
+Responses count: 4
+Name Server Count: 0
+Additional Record Count: 0
+Question name: vscode-sync.trafficmanager.net
+Question type: 1 - A
+Question class: IN
+Ansewer: vscode-sync.trafficmanager.net
+Answer type: 5 - CNAME
+Answer class: IN
+TTL: 14
+Respons length: 35
+RDATA preview: 127673636f64652d73796e632d6672632d30310d617a75726577656273697465
+RDATA decoded: vscode-sync-frc-01.azurewebsites.net
 
 ===================Parsing Packet n°188===================
 Timestamp seconds:  1780951028
@@ -6731,6 +6947,24 @@ Length: 58
 Checksum: 54561
 Payload preview: 193401000001000000000000066d6f62696c65066576656e7473046461746109
 
+======Parsing DNS packet n°232======
+Transaction ID: 6452
+Flags DNS: 256
+Questions count: 1
+Responses count: 0
+Name Server Count: 0
+Additional Record Count: 0
+Question name: mobile.events.data.microsoft.com
+Question type: 65 - HTTPS
+Question class: IN
+Ansewer: None
+Answer type: None
+Answer class: Unknown (None)
+TTL: None
+Respons length: None
+RDATA preview: 
+RDATA decoded: 
+
 ===================Parsing Packet n°233===================
 Timestamp seconds:  1780951030
 Timestamp microseconds:  324973
@@ -6762,6 +6996,24 @@ Destination port: 53
 Length: 58
 Checksum: 8699
 Payload preview: 139a01000001000000000000066d6f62696c65066576656e7473046461746109
+
+======Parsing DNS packet n°233======
+Transaction ID: 5018
+Flags DNS: 256
+Questions count: 1
+Responses count: 0
+Name Server Count: 0
+Additional Record Count: 0
+Question name: mobile.events.data.microsoft.com
+Question type: 28 - AAAA
+Question class: IN
+Ansewer: None
+Answer type: None
+Answer class: Unknown (None)
+TTL: None
+Respons length: None
+RDATA preview: 
+RDATA decoded: 
 
 ===================Parsing Packet n°234===================
 Timestamp seconds:  1780951030
@@ -6795,6 +7047,24 @@ Length: 58
 Checksum: 2537
 Payload preview: ad3101000001000000000000066d6f62696c65066576656e7473046461746109
 
+======Parsing DNS packet n°234======
+Transaction ID: 44337
+Flags DNS: 256
+Questions count: 1
+Responses count: 0
+Name Server Count: 0
+Additional Record Count: 0
+Question name: mobile.events.data.microsoft.com
+Question type: 1 - A
+Question class: IN
+Ansewer: None
+Answer type: None
+Answer class: Unknown (None)
+TTL: None
+Respons length: None
+RDATA preview: 
+RDATA decoded: 
+
 ===================Parsing Packet n°235===================
 Timestamp seconds:  1780951030
 Timestamp microseconds:  351746
@@ -6826,6 +7096,24 @@ Destination port: 3315
 Length: 226
 Checksum: 45032
 Payload preview: 193481800001000200010000066d6f62696c65066576656e7473046461746109
+
+======Parsing DNS packet n°235======
+Transaction ID: 6452
+Flags DNS: 33152
+Questions count: 1
+Responses count: 2
+Name Server Count: 1
+Additional Record Count: 0
+Question name: mobile.events.data.microsoft.com
+Question type: 65 - HTTPS
+Question class: IN
+Ansewer: mobile.events.data.microsoft.com
+Answer type: 5 - CNAME
+Answer class: IN
+TTL: 120
+Respons length: 39
+RDATA preview: 066d6f62696c65066576656e747304646174610e747261666669636d616e6167
+RDATA decoded: mobile.events.data.trafficmanager.net
 
 ===================Parsing Packet n°236===================
 Timestamp seconds:  1780951030
@@ -6859,6 +7147,24 @@ Length: 179
 Checksum: 8004
 Payload preview: ad3181800001000300000000066d6f62696c65066576656e7473046461746109
 
+======Parsing DNS packet n°236======
+Transaction ID: 44337
+Flags DNS: 33152
+Questions count: 1
+Responses count: 3
+Name Server Count: 0
+Additional Record Count: 0
+Question name: mobile.events.data.microsoft.com
+Question type: 1 - A
+Question class: IN
+Ansewer: mobile.events.data.microsoft.com
+Answer type: 5 - CNAME
+Answer class: IN
+TTL: 118
+Respons length: 39
+RDATA preview: 066d6f62696c65066576656e747304646174610e747261666669636d616e6167
+RDATA decoded: mobile.events.data.trafficmanager.net
+
 ===================Parsing Packet n°237===================
 Timestamp seconds:  1780951030
 Timestamp microseconds:  354718
@@ -6890,6 +7196,24 @@ Destination port: 50648
 Length: 226
 Checksum: 1220
 Payload preview: 139a81800001000200010000066d6f62696c65066576656e7473046461746109
+
+======Parsing DNS packet n°237======
+Transaction ID: 5018
+Flags DNS: 33152
+Questions count: 1
+Responses count: 2
+Name Server Count: 1
+Additional Record Count: 0
+Question name: mobile.events.data.microsoft.com
+Question type: 28 - AAAA
+Question class: IN
+Ansewer: mobile.events.data.microsoft.com
+Answer type: 5 - CNAME
+Answer class: IN
+TTL: 116
+Respons length: 39
+RDATA preview: 066d6f62696c65066576656e747304646174610e747261666669636d616e6167
+RDATA decoded: mobile.events.data.trafficmanager.net
 
 ===================Parsing Packet n°238===================
 Timestamp seconds:  1780951030

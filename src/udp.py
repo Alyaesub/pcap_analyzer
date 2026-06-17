@@ -3,7 +3,7 @@ def parse_udp(udp_bytes):
   if len(udp_bytes) < 8:
     print("Erreur, packet UDP non valide")
     exit(1)
-
+  
   src_port = int.from_bytes(udp_bytes[0:2], byteorder="big")
   dst_port = int.from_bytes(udp_bytes[2:4], byteorder="big")
   length = int.from_bytes(udp_bytes[4:6], byteorder="big") # header UDP + payload UDP 

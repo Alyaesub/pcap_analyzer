@@ -34,6 +34,11 @@ from ipv6 import (
   parse_ipv6,
   get_ipv6_protocol_name,
 )
+from dns import (
+  parse_dns,
+  get_dns_class_name,
+  get_dns_type_name,
+)
 
 #pathe de la ressource a analiser
 RESSOURCE_PATH = "captures/ethernet_capture_small.pcap"
@@ -84,6 +89,11 @@ with open(RESSOURCE_PATH, 'rb') as f:
     icmp = None
     arp = None
     ipv6 = None
+    dns = None
+    question_type_name = None
+    question_class_name = None
+    answer_type_name = None
+    answer_class_name = None
     
     if global_header["network"]  == 1: # verifie le network
       # appele la function qui parse le packet Ethernet
@@ -95,8 +105,16 @@ with open(RESSOURCE_PATH, 'rb') as f:
         if ipv4["protocol"] == 6:
           tcp = parse_tcp(ipv4["payload"])
           flags_names = get_tcp_flags_names(tcp["flags"])
+          #parser http tcp[payload]
         elif ipv4["protocol"] == 17:
           udp = parse_udp(ipv4["payload"])
+          if udp["src_port"] == 53 or udp["dst_port"] == 53:
+            dns = parse_dns(udp["payload"])
+            question_type_name = get_dns_type_name(dns["question_type"])
+            if dns["answer_type"] is not None:
+              answer_type_name = get_dns_type_name(dns["answer_type"])
+            question_class_name = get_dns_class_name(dns["question_class"])
+            answer_class_name = get_dns_class_name(dns["answer_class"])
         elif ipv4["protocol"] == 1:
           icmp = parse_icmp(ipv4["payload"])
       elif ethernet["ethertype"] == 0x0806: # if ethertype == ARP
@@ -192,6 +210,25 @@ with open(RESSOURCE_PATH, 'rb') as f:
       print("Final Header:", ipv6["final_next_header"])
       print("Extensions:", ipv6["extensions_headers"])
       print("Payload preview:", ipv6["payload"][:32].hex())
+      print()
+    if dns is not None:
+      print(f"======Parsing DNS packet n°{packet_index}======")
+      print("Transaction ID:", dns["transaction_id"])
+      print("Flags DNS:", dns["flags_dns"])
+      print("Questions count:", dns["qdcount"])
+      print("Responses count:", dns["ancount"])
+      print("Name Server Count:", dns["nscount"])
+      print("Additional Record Count:", dns["arcount"])
+      print("Question name:", dns["question_name"])
+      print("Question type:", question_type_name)
+      print("Question class:", question_class_name)
+      print("Ansewer name:", dns["answer_name"])
+      print("Answer type:", answer_type_name)
+      print("Answer class:", answer_class_name)
+      print("TTL:", dns["ttl"])
+      print("Respons length:", dns["rdlength"])
+      print("RDATA preview:", dns["rdata"][:32].hex())
+      print("RDATA decoded:", dns["rdata_decoded"])
       print()
     # incrémente l'index
     packet_index += 1
