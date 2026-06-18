@@ -89,3 +89,9 @@ HTTP:
 - pas de réassemblage TCP
 - les fragments TCP incomplets sont ignorés
 - body affiché en preview uniquement
+
+QUIC :
+
+- QUIC est détecté de manière best effort sur UDP/443.
+- Le contenu HTTP/3 n’est pas décodé car QUIC est chiffré.
+- Le parseur affiche seulement les champs accessibles sans déchiffrement.

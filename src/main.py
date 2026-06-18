@@ -1,3 +1,4 @@
+from operator import imod
 import os
 
 #import des function pour les parser
@@ -41,6 +42,9 @@ from dns import (
 )
 from http import (
   parse_http,
+)
+from quic import (
+  parse_quic,
 )
 
 #pathe de la ressource a analiser
@@ -98,6 +102,7 @@ with open(RESSOURCE_PATH, 'rb') as f:
     answer_type_name = None
     answer_class_name = None
     http = None
+    quic = None
     
     if global_header["network"]  == 1: # verifie le network
       # appele la function qui parse le packet Ethernet
@@ -121,6 +126,8 @@ with open(RESSOURCE_PATH, 'rb') as f:
             question_class_name = get_dns_class_name(dns["question_class"])
             if dns["answer_class"] is not None:
               answer_class_name = get_dns_class_name(dns["answer_class"])
+          if udp["src_port"] == 443 or udp["dst_port"] == 443:
+            quic = parse_quic(udp["payload"])
         elif ipv4["protocol"] == 1:
           icmp = parse_icmp(ipv4["payload"])
       elif ethernet["ethertype"] == 0x0806: # if ethertype == ARP
@@ -248,6 +255,17 @@ with open(RESSOURCE_PATH, 'rb') as f:
       print("Body length:", http["body_length"])
       print("Body preview hexa:", http["body_preview_hex"])
       print("Body preview texte:", http["body_preview_text"])
+      print()
+    if quic is not None:
+      print(f"======Parsing QUIC packet n°{packet_index}======")
+      print("Header type:", quic["header_type"])
+      print("First byte:", quic["first_byte"])
+      print("Payload length:", quic["payload_length"])
+      print("Version:", quic["version"])
+      print("DCID length:", quic["dcid_length"])
+      print("DCID hexa:", quic["dcid_hex"])
+      print("SCID length:", quic["scid_length"])
+      print("SCID hexa:", quic["scid_hex"])
       print()
     # incrémente l'index
     packet_index += 1
