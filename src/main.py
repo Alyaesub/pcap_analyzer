@@ -1,8 +1,17 @@
-from operator import imod
 import os
+##argparse et commande CLI
+import argparse
+
+parser = argparse.ArgumentParser(description="Analyseur PCAP en raw bytes")
+parser.add_argument("file", help="argument obligatoire : fichier PCAP")
+parser.add_argument(
+  "--proto",
+  choices=["pcap", "ethernet", "arp", "ipv4", "ipv6", "tcp", "udp", "icmp", "dns", "http", "quic"],
+  help="Filtrer l'affichage par protocole"
+)
+args = parser.parse_args()
 
 #import des function pour les parser
-import ipv6
 from pcap_parser import (
   parse_global_header,
   parse_packet_header,
@@ -48,7 +57,8 @@ from quic import (
 )
 
 #pathe de la ressource a analiser
-RESSOURCE_PATH = "captures/ethernet_capture_small.pcap"
+RESSOURCE_PATH = args.file # args du path de la ressource
+PROTO_FILTER = args.proto #filtre pour commande cli et affiche les proto demandé
 
 ############## Gestion et lecture des fichier source ##############
 
@@ -72,6 +82,7 @@ with open(RESSOURCE_PATH, 'rb') as f:
   
   # variable qui stocke les packet pour boucler sur tous les packet
   packet_index = 1
+  displayed_packet = 0 #compteur total : combien de paquets affichés
   
   # boucle pour parcourire tous les packet du pcap
   while True:
@@ -134,9 +145,44 @@ with open(RESSOURCE_PATH, 'rb') as f:
         arp = parse_arp(ethernet["payload"])
       elif ethernet["ethertype"] == 0x86DD:  # if ethertype == IPV6
         ipv6 = parse_ipv6(ethernet["payload"])
-        protocol_name_ipv6 = get_ipv6_protocol_name(ipv6["next_header"])
+        protocol_name_ipv6 = get_ipv6_protocol_name(ipv6["final_next_header"])
 
-    ##################### Parsing des Packet #####################
+    ########### filtrage des packet pour commande CLI ###############
+  
+    display_packet = False #booléen temporaire : afficher ce paquet  True/False
+    
+    if PROTO_FILTER is None:
+      display_packet = True
+    if PROTO_FILTER == "ethernet" and ethernet is not None:
+      display_packet = True
+    if PROTO_FILTER == "arp" and arp is not None:
+      display_packet = True
+    if PROTO_FILTER == "ipv4" and ipv4 is not None:
+      display_packet = True
+    if PROTO_FILTER == "ipv6" and ipv6 is not None:
+      display_packet = True
+    if PROTO_FILTER == "tcp" and tcp is not None:
+      display_packet = True
+    if PROTO_FILTER == "udp" and udp is not None:
+      display_packet = True
+    if PROTO_FILTER == "icmp" and icmp is not None:
+      display_packet = True
+    if PROTO_FILTER == "dns" and dns is not None:
+      display_packet = True
+    if PROTO_FILTER == "http" and http is not None:
+      display_packet = True
+    if PROTO_FILTER == "quic" and quic is not None:
+      display_packet = True
+    if PROTO_FILTER == "pcap":
+      display_packet = True
+    if display_packet is False:
+      packet_index += 1
+      continue
+    
+    ## ajoute au display packet
+    displayed_packet += 1 #compteur total : combien de paquets affichés
+  
+    ##################### Print des parsing des Packet #####################
     # print les infos du packet header
     print(f"===================Parsing Packet n°{packet_index}===================")
     print("Timestamp seconds: ", packet_header["ts_sec"])
@@ -147,6 +193,7 @@ with open(RESSOURCE_PATH, 'rb') as f:
     print(f"======Packet Data packet n°{packet_index}======")
     print("Packet data length: ", len(packet_data_byte))
     print("Packet data preview (32 bytes): ", packet_data_byte[:32].hex())
+    print()
     #print les data ethernet
     if ethernet is not None:
       print(f"======Parsing Ethernet packet n°{packet_index}======")
@@ -235,11 +282,11 @@ with open(RESSOURCE_PATH, 'rb') as f:
       print("Question name:", dns["question_name"])
       print("Question type:", question_type_name)
       print("Question class:", question_class_name)
-      print("Ansewer name:", dns["answer_name"])
+      print("Answer name:", dns["answer_name"])
       print("Answer type:", answer_type_name)
       print("Answer class:", answer_class_name)
       print("TTL:", dns["ttl"])
-      print("Respons length:", dns["rdlength"])
+      print("Response length:", dns["rdlength"])
       print("RDATA preview:", dns["rdata"][:32].hex())
       print("RDATA decoded:", dns["rdata_decoded"])
       print()
@@ -275,6 +322,8 @@ with open(RESSOURCE_PATH, 'rb') as f:
 ####### print du nombre de packet ####
 print("======Nombre totale de packets======")
 print("Total packets:", packet_index - 1)
+print("Total display-packets:", displayed_packet, "/", packet_index - 1)
+print("Filter:", PROTO_FILTER)
 print()
 
 ######################## parsing du global header #########################

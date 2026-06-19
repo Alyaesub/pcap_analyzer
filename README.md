@@ -95,3 +95,7 @@ QUIC :
 - QUIC est détecté de manière best effort sur UDP/443.
 - Le contenu HTTP/3 n’est pas décodé car QUIC est chiffré.
 - Le parseur affiche seulement les champs accessibles sans déchiffrement.
+
+PCAP :
+
+- --proto pcap affiche tous les paquets avec les informations PCAP de base.
