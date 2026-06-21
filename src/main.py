@@ -1,5 +1,5 @@
 import os
-##argparse et commande CLI
+################### argparse et commande CLI
 import argparse
 
 parser = argparse.ArgumentParser(description="Analyseur PCAP en raw bytes")
@@ -10,6 +10,7 @@ parser.add_argument(
   help="Filtrer l'affichage par protocole"
 )
 args = parser.parse_args()
+###########################
 
 #import des function pour les parser
 from pcap_parser import (
