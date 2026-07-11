@@ -1,58 +1,60 @@
 # PCAP Analyzer — Wireshark-like en raw bytes
 
-## Objectif
+# PCAP Analyzer
 
-Ce projet est un analyseur de fichiers PCAP développé en Python.
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![Version](https://img.shields.io/badge/version-1.0-success)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-Il lit une capture réseau `.pcap` en mode offline et affiche les informations importantes des protocoles rencontrés, couche par couche, à partir des bytes bruts.
+PCAP Analyzer est un outil CLI Python permettant d'analyser des captures réseau **PCAP** en mode hors ligne.
 
-L’objectif est de reconstruire manuellement une partie du fonctionnement d’un outil type Wireshark, sans utiliser de librairie spécialisée dans le parsing réseau.
+Il reconstruit manuellement les différentes couches réseau (Ethernet, IP, TCP, UDP, DNS, HTTP...) directement à partir des bytes du fichier, sans utiliser de bibliothèque spécialisée comme Scapy, PyShark ou dpkt.
 
-Le programme ne capture pas de trafic en direct. Il analyse uniquement des fichiers PCAP existants.
+Le projet a été développé dans un objectif pédagogique afin de comprendre le fonctionnement des protocoles réseau et le principe de fonctionnement d'un analyseur comme Wireshark.
+
+---
+
+## Fonctionnalités
+
+- Lecture de fichiers `.pcap`
+- Parsing manuel des bytes
+- Support du format PCAP classique
+- Décodage Ethernet II
+- Décodage ARP
+- Décodage IPv4
+- Décodage IPv6
+- Décodage TCP
+- Décodage UDP
+- Décodage ICMPv4
+- Parsing DNS
+- Parsing HTTP/1.1 (best effort)
+- Détection minimale de QUIC
+- Filtrage des paquets par protocole
+- Interface en ligne de commande avec `argparse`
+- Dockerisation complète du projet
 
 ---
 
 ## Contraintes techniques
 
-Le projet respecte les contraintes suivantes :
+Le projet est volontairement développé **sans bibliothèque de parsing réseau**.
 
-- Lecture d’un fichier PCAP classique.
-- PCAPNG non supporté.
-- Parsing manuel des bytes.
-- Pas de Scapy.
-- Pas de dpkt.
-- Pas de pyshark.
-- Pas de tshark.
-- Pas de tcpdump.
-- Pas de libpcap.
-- Pas d’outil externe pour décoder les paquets.
-- Interface en ligne de commande avec `argparse`.
-- Projet dockerisé.
+Aucune utilisation de :
 
----
+- Scapy
+- dpkt
+- PyShark
+- tshark
+- tcpdump
+- libpcap
 
-## Protocoles supportés
-
-Le parseur supporte les protocoles suivants :
-
-- PCAP Global Header
-- PCAP Packet Header
-- Ethernet II
-- ARP
-- IPv4
-- IPv6
-- TCP
-- UDP
-- ICMPv4
-- DNS
-- HTTP/1.1 best effort
-- QUIC minimal
+Tout le décodage est réalisé directement à partir des bytes du fichier PCAP.
 
 ---
 
 ## Structure du projet
 
-```txt
+```text
 pcap-analyzer/
 ├── captures/
 │   ├── ethernet_capture.pcap
@@ -62,9 +64,9 @@ pcap-analyzer/
 │   ├── main.py
 │   ├── pcap_parser.py
 │   ├── ethernet.py
+│   ├── arp.py
 │   ├── ipv4.py
 │   ├── ipv6.py
-│   ├── arp.py
 │   ├── tcp.py
 │   ├── udp.py
 │   ├── icmp.py
@@ -73,87 +75,94 @@ pcap-analyzer/
 │   ├── quic.py
 │   └── utils.py
 ├── Dockerfile
+├── .gitignore
+├── LICENSE
 ├── README.md
-└── output.txt
+└── requirements.txt
+```
+
+### Modules
+
+- `main.py` : point d'entrée et orchestration du programme
+- `pcap_parser.py` : lecture du fichier PCAP et parcours des paquets
+- `ethernet.py` : décodage Ethernet II
+- `arp.py` : décodage ARP
+- `ipv4.py` : décodage IPv4
+- `ipv6.py` : décodage IPv6
+- `tcp.py` : décodage TCP
+- `udp.py` : décodage UDP
+- `icmp.py` : décodage ICMPv4
+- `dns.py` : analyse des paquets DNS
+- `http.py` : analyse HTTP/1.1
+- `quic.py` : analyse QUIC (best effort)
+- `utils.py` : fonctions utilitaires
+
+---
+
+## Installation
+
+### 1. Cloner le dépôt
+
+```bash
+git clone <URL_DU_DEPOT>
+cd pcap-analyzer
+```
+
+### 2. Créer un environnement virtuel
+
+```bash
+python3.12 -m venv .venv
+```
+
+### 3. Activer l'environnement
+
+Sur macOS ou Linux :
+
+```bash
+source .venv/bin/activate
+```
+
+Sur Windows PowerShell :
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+### 4. Installer les dépendances
+
+```bash
+python -m pip install -r requirements.txt
 ```
 
 ---
 
-## Fonctionnement global
+## Utilisation
 
-Le programme lit le fichier PCAP dans cet ordre :
+Depuis la racine du projet :
 
-```txt
-PCAP Global Header
-→ Packet Header
-→ Packet Data
-→ Ethernet II
-→ ARP / IPv4 / IPv6
-→ TCP / UDP / ICMP
-→ DNS / HTTP / QUIC
+```bash
+python src/main.py captures/ethernet_capture_small.pcap
 ```
 
-Le parsing fonctionne en mode “poupée russe” : chaque couche contient un payload qui est ensuite donné au parseur de la couche suivante.
+Avec un filtre protocole :
 
-Exemple :
-
-```txt
-Ethernet II
-└── IPv4
-    └── UDP
-        └── DNS
-```
-
-Ou :
-
-```txt
-Ethernet II
-└── IPv4
-    └── TCP
-        └── HTTP
+```bash
+python src/main.py captures/ethernet_capture_small.pcap --proto dns
 ```
 
 ---
 
-## Installation locale
+## Arguments CLI
 
-Aucune dépendance externe n’est nécessaire.
+| Argument       | Obligatoire | Description                                    |
+| -------------- | ----------: | ---------------------------------------------- |
+| `capture`      |         Oui | Fichier PCAP à analyser                        |
+| `--proto`      |         Non | Filtre l'affichage sur un protocole spécifique |
+| `-h`, `--help` |         Non | Affiche l'aide générée par `argparse`          |
 
-Le projet utilise uniquement Python et la bibliothèque standard.
+Protocoles disponibles :
 
-Version recommandée :
-
-```bash
-python3 --version
-```
-
-Exécution locale :
-
-```bash
-python3 src/main.py captures/ethernet_capture_small.pcap
-```
-
----
-
-## Utilisation CLI
-
-### Exécution sans filtre
-
-```bash
-python3 src/main.py captures/ethernet_capture_small.pcap
-```
-
-Cette commande affiche tous les paquets parsés.
-
-### Exécution avec filtre protocole
-
-```bash
-python3 src/main.py captures/ethernet_capture_small.pcap --proto tcp
-```
-
-Protocoles disponibles avec `--proto` :
-
-```txt
+```text
 pcap
 ethernet
 arp
@@ -167,106 +176,132 @@ http
 quic
 ```
 
-Exemples :
+Afficher l'aide :
 
 ```bash
-python3 src/main.py captures/ethernet_capture_small.pcap --proto ethernet
-python3 src/main.py captures/ethernet_capture_small.pcap --proto arp
-python3 src/main.py captures/ethernet_capture_small.pcap --proto ipv4
-python3 src/main.py captures/ethernet_capture_small.pcap --proto ipv6
-python3 src/main.py captures/ethernet_capture_small.pcap --proto tcp
-python3 src/main.py captures/ethernet_capture_small.pcap --proto udp
-python3 src/main.py captures/ethernet_capture_small.pcap --proto icmp
-python3 src/main.py captures/ethernet_capture_small.pcap --proto dns
-python3 src/main.py captures/ethernet_capture_small.pcap --proto http
-python3 src/main.py captures/ethernet_capture_small.pcap --proto quic
+python src/main.py --help
 ```
-
-Le filtre est appliqué après le parsing du paquet.
-Si aucun paquet ne correspond au filtre, le compteur affiché indique `0` paquet affiché.
-
----
-
-## Docker
-
-### Build de l’image
-
-Depuis la racine du projet :
-
-```bash
-docker build -t pcap-analyzer .
-```
-
-### Exécution sans filtre
-
-```bash
-docker run --rm -v "$PWD/captures:/app/captures" pcap-analyzer captures/ethernet_capture_small.pcap
-```
-
-### Exécution avec filtre
-
-Commande générique :
-
-```bash
-docker run --rm -v "$PWD/captures:/app/captures" pcap-analyzer captures/ethernet_capture_small.pcap --proto <protocole>
-```
-
-Exemples :
-
-```bash
-docker run --rm -v "$PWD/captures:/app/captures" pcap-analyzer captures/ethernet_capture_small.pcap --proto ipv4
-docker run --rm -v "$PWD/captures:/app/captures" pcap-analyzer captures/ethernet_capture_small.pcap --proto ipv6
-docker run --rm -v "$PWD/captures:/app/captures" pcap-analyzer captures/ethernet_capture_small.pcap --proto tcp
-docker run --rm -v "$PWD/captures:/app/captures" pcap-analyzer captures/ethernet_capture_small.pcap --proto udp
-docker run --rm -v "$PWD/captures:/app/captures" pcap-analyzer captures/ethernet_capture_small.pcap --proto dns
-docker run --rm -v "$PWD/captures:/app/captures" pcap-analyzer captures/ethernet_capture_small.pcap --proto http
-docker run --rm -v "$PWD/captures:/app/captures" pcap-analyzer captures/ethernet_capture_small.pcap --proto quic
-```
-
-Le volume Docker :
-
-```bash
--v "$PWD/captures:/app/captures"
-```
-
-permet de monter le dossier local `captures/` dans le conteneur à l’emplacement `/app/captures`.
-
-Cela permet au conteneur de lire les fichiers PCAP sans les copier directement dans l’image Docker.
 
 ---
 
 ## Exemple de sortie
 
-Exemple avec un filtre DNS :
+```text
+====== Parsing DNS packet ======
 
-```txt
-======Parsing DNS packet n°67======
-Transaction ID: 13745
-Flags DNS: 33152
-Questions count: 1
-Responses count: 6
-Name Server Count: 0
-Additional Record Count: 0
-Question name: main.vscode-cdn.net
-Question type: 1 - A
-Question class: IN
-Answer name: main.vscode-cdn.net
-Answer type: 5 - CNAME
-Answer class: IN
-TTL: 300
-Response length: 32
-RDATA preview: 7673636f64652d63646e...
-RDATA decoded: vscode-cdn.z01.azurefd.net
+Transaction ID : 13745
+
+Question :
+main.vscode-cdn.net
+
+Réponse :
+vscode-cdn.z01.azurefd.net
+
+TTL : 300
+
+Type : CNAME
 ```
 
-Exemple de résumé final :
+Résumé :
 
-```txt
-======Nombre totale de packets======
-Total packets: 150
-Total display-packets: 12 / 150
-Filter: dns
+```text
+====== Parsing Summary ======
+
+Total packets : 150
+
+Displayed packets : 12
+
+Protocol filter : dns
 ```
+
+---
+
+## Docker
+
+### Construction de l'image
+
+```bash
+docker build -t pcap-analyzer .
+```
+
+### Exécution
+
+```bash
+docker run --rm \
+-v "$PWD/captures:/app/captures" \
+pcap-analyzer \
+captures/ethernet_capture_small.pcap
+```
+
+Avec un filtre :
+
+```bash
+docker run --rm \
+-v "$PWD/captures:/app/captures" \
+pcap-analyzer \
+captures/ethernet_capture_small.pcap \
+--proto dns
+```
+
+---
+
+## Fonctionnement
+
+Le fichier PCAP est analysé couche par couche.
+
+```text
+PCAP Global Header
+
+↓
+
+Packet Header
+
+↓
+
+Ethernet II
+
+↓
+
+ARP / IPv4 / IPv6
+
+↓
+
+TCP / UDP / ICMP
+
+↓
+
+DNS / HTTP / QUIC
+```
+
+Chaque parseur décode uniquement son protocole puis transmet le **payload** au parseur de la couche suivante.
+
+Cette architecture reproduit le fonctionnement d'un analyseur réseau classique.
+
+---
+
+## Protocoles supportés
+
+### Couche Liaison
+
+- Ethernet II
+- ARP
+
+### Couche Réseau
+
+- IPv4
+- IPv6
+
+### Couche Transport
+
+- TCP
+- UDP
+- ICMPv4
+
+### Couche Application
+
+- DNS
+- HTTP/1.1 (best effort)
+- QUIC (best effort)
 
 ---
 
@@ -274,385 +309,192 @@ Filter: dns
 
 ### PCAP
 
-Le parseur lit :
+Informations analysées :
 
-- Magic number
+- Magic Number
 - Endianness
-- Version major
-- Version minor
-- ThisZone
-- Sigfigs
+- Version
 - Snaplen
-- Network / Linktype
-
-Le programme supporte les fichiers PCAP classiques.
-
-PCAPNG n’est pas supporté.
-
----
+- Linktype
 
 ### Ethernet II
 
-Le parseur lit :
-
-- Adresse MAC destination
-- Adresse MAC source
+- MAC Source
+- MAC Destination
 - EtherType
-- Payload Ethernet
-
-EtherTypes gérés :
-
-```txt
-0x0800 → IPv4
-0x0806 → ARP
-0x86DD → IPv6
-```
-
----
 
 ### ARP
 
-Le parseur lit :
-
-- Hardware type
-- Protocol type
-- Hardware size
-- Protocol size
-- Operation
+- Hardware Type
+- Protocol Type
 - Sender MAC
 - Sender IP
 - Target MAC
 - Target IP
 
----
-
 ### IPv4
-
-Le parseur lit :
 
 - Version
 - IHL
-- Header length
-- Total length
+- Total Length
 - TTL
 - Protocol
 - Source IP
 - Destination IP
 - Flags
-- Fragment offset
-- Payload
-
-Protocoles IPv4 gérés :
-
-```txt
-1  → ICMP
-6  → TCP
-17 → UDP
-```
-
----
+- Fragment Offset
 
 ### IPv6
 
-Le parseur lit :
-
 - Version
-- Payload length
+- Payload Length
 - Next Header
-- Hop limit
+- Hop Limit
 - Source IPv6
 - Destination IPv6
-- Payload
-- Final Next Header après extensions
-- Extensions détectées
-
-Gestion des extension headers IPv6 :
-
-- Hop-by-Hop Options : saut best effort.
-- Routing Header : saut best effort.
-- Destination Options : saut best effort.
-- Fragment Header : saut fixe de 8 bytes.
-- ESP / AH : détectés mais non décodés complètement.
-- ICMPv6 : identifié via `next_header = 58`, mais pas parsé en détail.
-
----
 
 ### TCP
 
-Le parseur lit :
-
-- Source port
-- Destination port
-- Sequence number
-- Acknowledgment number
-- Header length
+- Source Port
+- Destination Port
+- Sequence Number
+- Acknowledgment Number
 - Flags
 - Window
 - Checksum
-- Urgent pointer
-- Options
 - Payload
-
-Flags TCP gérés :
-
-```txt
-FIN
-SYN
-RST
-PSH
-ACK
-URG
-```
-
----
 
 ### UDP
 
-Le parseur lit :
-
-- Source port
-- Destination port
+- Source Port
+- Destination Port
 - Length
 - Checksum
 - Payload
 
-UDP est utilisé ensuite pour détecter :
-
-```txt
-port 53  → DNS
-port 443 → QUIC minimal
-```
-
----
-
 ### ICMPv4
-
-Le parseur lit :
 
 - Type
 - Code
 - Checksum
-- Identifier si applicable
-- Sequence number si applicable
-- Payload
-
----
+- Identifier
+- Sequence Number
 
 ### DNS
 
-Le parseur DNS fonctionne sur UDP/53.
+Le parseur DNS décode :
 
-Il lit le header DNS :
+- Header
+- Questions
+- Réponses
+- Noms compressés
+- Types A, AAAA et CNAME
 
-- Transaction ID
-- Flags
-- QDCOUNT
-- ANCOUNT
-- NSCOUNT
-- ARCOUNT
+### HTTP
 
-Il lit ensuite :
+Le parseur HTTP fonctionne en **best effort**.
 
-- Question name
-- Question type
-- Question class
-- Answer name
-- Answer type
-- Answer class
-- TTL
-- RDLENGTH
-- RDATA
+Il décode :
 
-Le parseur gère les noms DNS classiques et les noms compressés avec pointeurs.
-
-Types DNS décodés :
-
-```txt
-A      → IPv4
-AAAA   → IPv6
-CNAME  → nom de domaine
-```
-
-Autres types détectés ou affichés :
-
-```txt
-NS
-MX
-SVCB
-HTTPS
-Unknown
-```
-
----
-
-### HTTP/1.1
-
-Le parseur HTTP fonctionne en best effort sur TCP.
-
-Il lit uniquement le HTTP clair, généralement sur le port 80 ou un port local de test.
-
-Il lit :
-
-- Type : request / response
+- Request / Response
 - Method
-- Path
+- URI
 - Version
-- Status code
-- Reason
+- Status Code
 - Headers
-- Body length
-- Body preview hex
-- Body preview text
+- Body Preview
 
-Limites HTTP :
+### QUIC
 
-- HTTPS/TLS non décodé.
-- Pas de réassemblage TCP.
-- Les fragments TCP incomplets sont ignorés.
-- Le body est affiché en preview uniquement.
-- Le body peut contenir du texte, du HTML, du JSON ou du binaire.
+Détection minimale :
 
----
-
-### QUIC minimal
-
-QUIC est détecté en best effort sur UDP/443.
-
-Le parseur lit :
-
-- First byte
-- Payload length
-- Header type : long header ou short header
-- Version si long header
-- DCID length
-- DCID hex
-- SCID length
-- SCID hex
-
-Limites QUIC :
-
-- HTTP/3 n’est pas décodé.
-- Le contenu QUIC est chiffré.
-- Le parseur affiche uniquement les champs accessibles sans déchiffrement.
-- Les paquets short header sont seulement identifiés.
+- Long Header
+- Short Header
+- Version
+- DCID
+- SCID
 
 ---
 
-## Choix techniques
-
-### Parsing manuel
-
-Le projet utilise volontairement des opérations bas niveau :
-
-```python
-int.from_bytes(...)
-bytes[start:end]
-payload[offset:offset + length]
-```
-
-Ce choix permet de comprendre comment les protocoles sont réellement structurés dans les bytes.
-
-### Gestion des offsets
-
-Les protocoles comme DNS et QUIC utilisent des champs de taille variable.
-
-Le programme utilise donc un curseur `offset` pour avancer progressivement dans les données :
-
-```txt
-lire un champ
-avancer offset
-lire le champ suivant
-avancer offset
-```
-
-Cette logique est utilisée notamment pour :
-
-- DNS QNAME
-- DNS RDATA
-- DNS compression
-- QUIC DCID
-- QUIC SCID
-
-### Best effort
-
-Certains protocoles sont volontairement parsés en best effort :
-
-- IPv6 extension headers
-- HTTP/1.1
-- QUIC
-- DNS types avancés
-
-Le but est de produire une analyse lisible sans réimplémenter entièrement Wireshark.
-
----
-
-## Limites connues
+## Limites de la version 1.0
 
 - PCAPNG non supporté.
 - Pas de réassemblage TCP.
 - Pas de vérification des checksums.
-- Pas de décodage TLS/HTTPS.
-- Pas de décodage HTTP/2.
-- Pas de décodage HTTP/3.
-- QUIC uniquement détecté et partiellement lu.
-- DNS Authority et Additional non décodés en détail.
+- HTTPS / TLS non décodé.
+- HTTP/2 non supporté.
+- HTTP/3 non supporté.
+- QUIC analysé en best effort.
 - DNSSEC non supporté.
-- IPv6 ICMPv6 non parsé en détail.
-- Certains paquets fragmentés ou incomplets peuvent être ignorés ou affichés partiellement.
+- ICMPv6 non implémenté.
+- Certains paquets fragmentés peuvent être affichés partiellement.
 
 ---
 
-## Exemples de tests utiles
+## Roadmap
 
-Tester tous les paquets :
+### Version 1.1
 
-```bash
-python3 src/main.py captures/ethernet_capture_small.pcap
-```
+- [ ] Ajouter le support ICMPv6
+- [ ] Vérification des checksums
+- [ ] Améliorer le parser HTTP
+- [ ] Améliorer la robustesse du parser
+- [ ] Ajouter des tests unitaires
+- [ ] Refactoriser les parseurs réseau
 
-Tester uniquement IPv4 :
+### Version 1.2
 
-```bash
-python3 src/main.py captures/ethernet_capture_small.pcap --proto ipv4
-```
+- [ ] Support PCAPNG
+- [ ] Réassemblage TCP
+- [ ] Support HTTP/2
+- [ ] Décodage complet des sections DNS Authority et Additional
+- [ ] Export JSON
+- [ ] Export CSV
 
-Tester uniquement DNS :
+### Version 2.0
 
-```bash
-python3 src/main.py captures/ethernet_capture_small.pcap --proto dns
-```
-
-Tester uniquement IPv6 :
-
-```bash
-python3 src/main.py captures/ethernet_capture_small.pcap --proto ipv6
-```
-
-Tester avec Docker :
-
-```bash
-docker run --rm -v "$PWD/captures:/app/captures" pcap-analyzer captures/ethernet_capture_small.pcap --proto dns
-```
-
-Tester une capture HTTP locale :
-
-```bash
-python3 src/main.py captures/http_local_capture.pcap --proto http
-```
+- [ ] Parser TLS
+- [ ] Parser HTTP/3
+- [ ] Parser QUIC avancé
+- [ ] Architecture par plugins
+- [ ] API REST
+- [ ] Interface Web
+- [ ] Docker Compose
+- [ ] Analyse statistique des captures
 
 ---
 
-## Conclusion
+## Sécurité et usage responsable
 
-Ce projet permet de comprendre la structure interne d’un fichier PCAP et des protocoles réseau courants en analysant directement les bytes.
+PCAP Analyzer est un projet pédagogique.
 
-Il met en pratique :
+Il analyse uniquement des captures réseau existantes.
 
-- la lecture de fichiers binaires ;
-- la gestion des offsets ;
-- l’encapsulation réseau ;
-- le parsing manuel de protocoles ;
-- la création d’une CLI ;
-- la dockerisation d’un outil Python.
+Le projet ne réalise **aucune capture de trafic en direct** et ne remplace pas un analyseur réseau professionnel comme Wireshark.
 
-Le résultat est un analyseur PCAP simple, lisible et extensible, proche d’un mini Wireshark en ligne de commande.
+Son objectif est de comprendre :
+
+- la structure d'un fichier PCAP
+- l'encapsulation des protocoles réseau
+- le parsing manuel de données binaires
+- le fonctionnement interne des protocoles réseau
+
+---
+
+## Contributions
+
+Les retours, propositions et contributions sont les bienvenus.
+
+Les améliorations peuvent être proposées avec :
+
+- une Issue GitHub
+- une Pull Request
+- une proposition de nouvelle fonctionnalité
+
+---
+
+## Licence
+
+Ce projet est distribué sous licence MIT.
+
+Consultez le fichier `LICENSE` pour plus d'informations.
